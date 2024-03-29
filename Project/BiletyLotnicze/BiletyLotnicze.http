@@ -1,0 +1,6 @@
+@BiletyLotnicze_HostAddress = http://localhost:5022
+
+GET {{BiletyLotnicze_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
