@@ -34,9 +34,13 @@ namespace Models
         [Required]
         public Status Status { get; set; }
         [Required]
-        public Airport AirportIdFrom { get; set; }
+        public int AirportIdTo {  get; set; }
         [Required]
-        public Airport AirportIdTo { get; set; }
+        public int AirportIdFrom { get; set; }
+        [Required, ForeignKey(nameof(AirportIdFrom))]
+        public Airport AirportFrom { get; set; }
+        [Required, ForeignKey(nameof(AirportIdTo))]
+        public Airport AirportTo { get; set; }
         [Required]
         public Plane Plane { get; set; }
         [Required]
@@ -53,11 +57,11 @@ namespace Models
                 .WithOne(x => x.Flights)
                 .OnDelete(DeleteBehavior.Cascade);
             builder
-                .HasOne(x=> x.AirportIdFrom)
+                .HasOne(x=> x.AirportFrom)
                 .WithOne(x=> x.FlightFrom)
                 .OnDelete(DeleteBehavior.Cascade);
             builder
-                .HasOne(x => x.AirportIdTo)
+                .HasOne(x => x.AirportTo)
                 .WithOne(x => x.FlightTo)
                 .OnDelete(DeleteBehavior.Cascade);
         }

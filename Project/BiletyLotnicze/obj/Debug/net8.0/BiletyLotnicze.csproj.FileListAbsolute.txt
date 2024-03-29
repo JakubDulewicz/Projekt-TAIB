@@ -135,3 +135,7 @@ D:\Taib\Projekt-TAIB\Project\BiletyLotnicze\obj\Debug\net8.0\refint\BiletyLotnic
 D:\Taib\Projekt-TAIB\Project\BiletyLotnicze\obj\Debug\net8.0\BiletyLotnicze.pdb
 D:\Taib\Projekt-TAIB\Project\BiletyLotnicze\obj\Debug\net8.0\BiletyLotnicze.genruntimeconfig.cache
 D:\Taib\Projekt-TAIB\Project\BiletyLotnicze\obj\Debug\net8.0\ref\BiletyLotnicze.dll
+D:\Taib\Projekt-TAIB\Project\BiletyLotnicze\bin\Debug\net8.0\DAL.dll
+D:\Taib\Projekt-TAIB\Project\BiletyLotnicze\bin\Debug\net8.0\Models.dll
+D:\Taib\Projekt-TAIB\Project\BiletyLotnicze\bin\Debug\net8.0\DAL.pdb
+D:\Taib\Projekt-TAIB\Project\BiletyLotnicze\bin\Debug\net8.0\Models.pdb

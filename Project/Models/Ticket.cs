@@ -27,7 +27,7 @@ namespace Models
         
         public Users User { get; set; }
         public Flight Flight { get; set; }
-        public Airlane Airlanes { get; set; }
+        public Airline Airlines { get; set; }
 
         public void Configure(EntityTypeBuilder<Ticket> builder)
         {
@@ -40,7 +40,7 @@ namespace Models
                 .WithMany(x => x.Tickets)
                 .OnDelete(DeleteBehavior.Cascade);
             builder
-                .HasOne(x => x.Airlanes)
+                .HasOne(x => x.Airlines)
                 .WithMany(x => x.Tickets)
                 .OnDelete(DeleteBehavior.Cascade);
         }

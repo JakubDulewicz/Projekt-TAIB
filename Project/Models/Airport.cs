@@ -34,11 +34,11 @@ namespace Models
         {
             builder
                 .HasOne(x => x.FlightTo)
-                .WithOne(x => x.AirportIdTo)
+                .WithOne(x => x.AirportTo)
                 .OnDelete(DeleteBehavior.Cascade);
             builder
                 .HasOne(x=> x.FlightFrom)
-                .WithOne(x=> x.AirportIdFrom) 
+                .WithOne(x=> x.AirportFrom) 
                 .OnDelete(DeleteBehavior.Cascade);
         }
     }

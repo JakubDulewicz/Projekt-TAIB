@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    public class Airlane : IEntityTypeConfiguration<Airlane>
+    public class Airline : IEntityTypeConfiguration<Airline>
     {
         [Required,Column("ID")]
         public int Id { get; set; }
@@ -25,15 +25,15 @@ namespace Models
         [Required]
         public IEnumerable<Ticket> Tickets { get; set; }
 
-        public void Configure(EntityTypeBuilder<Airlane> builder)
+        public void Configure(EntityTypeBuilder<Airline> builder)
         {
             builder
                 .HasMany(x => x.Tickets)
-                .WithOne(x => x.Airlanes)
+                .WithOne(x => x.Airlines)
                 .OnDelete(DeleteBehavior.Cascade);
             builder
                 .HasMany(x => x.Planes)
-                .WithOne(x => x.Airlanes)
+                .WithOne(x => x.Airlines)
                 .OnDelete(DeleteBehavior.Cascade);
         }
     }

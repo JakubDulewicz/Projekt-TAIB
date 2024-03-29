@@ -25,7 +25,7 @@ namespace Models
         public bool HasPrivateCabins { get; set; }
 
         public Flight Flights { get; set; }
-        public Airlane Airlanes { get; set; }
+        public Airline Airlines { get; set; }
 
         public void Configure(EntityTypeBuilder<Plane> builder)
         {
@@ -34,7 +34,7 @@ namespace Models
                 .WithOne(x => x.Plane)
                 .OnDelete(DeleteBehavior.Cascade);
             builder
-                .HasOne(x => x.Airlanes)
+                .HasOne(x => x.Airlines)
                 .WithMany(x => x.Planes)
                 .OnDelete(DeleteBehavior.Cascade);
         }
