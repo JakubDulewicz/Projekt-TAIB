@@ -26,8 +26,6 @@ namespace Models
         [Required,MaxLength(50)]
         public string Name { get; set; }
         [Required,MaxLength(50)]
-        public string From { get; set; }
-        [Required,MaxLength(50)]
         public string Destination { get; set; }
         [Required]
         public DateTime Departure { get; set; }
@@ -35,6 +33,10 @@ namespace Models
         public DateTime Arrival { get;}
         [Required]
         public Status Status { get; set; }
+        [Required]
+        public Airport AirportIdFrom { get; set; }
+        [Required]
+        public Airport AirportIdTo { get; set; }
         [Required]
         public Plane Plane { get; set; }
         [Required]
@@ -49,6 +51,14 @@ namespace Models
             builder
                 .HasOne(x => x.Plane)
                 .WithOne(x => x.Flights)
+                .OnDelete(DeleteBehavior.Cascade);
+            builder
+                .HasOne(x=> x.AirportIdFrom)
+                .WithOne(x=> x.FlightFrom)
+                .OnDelete(DeleteBehavior.Cascade);
+            builder
+                .HasOne(x => x.AirportIdTo)
+                .WithOne(x => x.FlightTo)
                 .OnDelete(DeleteBehavior.Cascade);
         }
     }

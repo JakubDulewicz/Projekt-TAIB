@@ -4074,11 +4074,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wojte\\source\\repos\\BiletyLotnicze\\Models\\Models.csproj",
+      "projectUniqueName": "D:\\Taib\\Projekt-TAIB\\Project\\Models\\Models.csproj",
       "projectName": "Models",
-      "projectPath": "C:\\Users\\wojte\\source\\repos\\BiletyLotnicze\\Models\\Models.csproj",
+      "projectPath": "D:\\Taib\\Projekt-TAIB\\Project\\Models\\Models.csproj",
       "packagesPath": "C:\\Users\\wojte\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wojte\\source\\repos\\BiletyLotnicze\\Models\\obj\\",
+      "outputPath": "D:\\Taib\\Projekt-TAIB\\Project\\Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,0 +1,15 @@
+D:\Taib\Projekt-TAIB\Project\Models\bin\Debug\net8.0\Models.deps.json
+D:\Taib\Projekt-TAIB\Project\Models\bin\Debug\net8.0\Models.runtimeconfig.json
+D:\Taib\Projekt-TAIB\Project\Models\bin\Debug\net8.0\Models.dll
+D:\Taib\Projekt-TAIB\Project\Models\bin\Debug\net8.0\Models.pdb
+D:\Taib\Projekt-TAIB\Project\Models\obj\Debug\net8.0\Models.csproj.AssemblyReference.cache
+D:\Taib\Projekt-TAIB\Project\Models\obj\Debug\net8.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Taib\Projekt-TAIB\Project\Models\obj\Debug\net8.0\Models.AssemblyInfoInputs.cache
+D:\Taib\Projekt-TAIB\Project\Models\obj\Debug\net8.0\Models.AssemblyInfo.cs
+D:\Taib\Projekt-TAIB\Project\Models\obj\Debug\net8.0\Models.csproj.CoreCompileInputs.cache
+D:\Taib\Projekt-TAIB\Project\Models\obj\Debug\net8.0\Models.sourcelink.json
+D:\Taib\Projekt-TAIB\Project\Models\obj\Debug\net8.0\Models.dll
+D:\Taib\Projekt-TAIB\Project\Models\obj\Debug\net8.0\refint\Models.dll
+D:\Taib\Projekt-TAIB\Project\Models\obj\Debug\net8.0\Models.pdb
+D:\Taib\Projekt-TAIB\Project\Models\obj\Debug\net8.0\Models.genruntimeconfig.cache
+D:\Taib\Projekt-TAIB\Project\Models\obj\Debug\net8.0\ref\Models.dll

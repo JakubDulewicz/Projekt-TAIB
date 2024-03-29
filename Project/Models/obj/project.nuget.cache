@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0v8RonGkNMJ7wHEFoeDycJaXUH6GB+s/rMRI5uQWdJzIn9xCFgkwdgdOcAx1Q8/ggBL1b04AdUw2Gh0addaSwg==",
+  "dgSpecHash": "PwP1SB9Ght+YkXCW3+0vqudciaSyHGQXLgrWaokDCR+xreaTya3YLF6JF5Xs1XoeYntZeFy3vGEr6tnTr9NmFQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\wojte\\source\\repos\\BiletyLotnicze\\Models\\Models.csproj",
+  "projectFilePath": "D:\\Taib\\Projekt-TAIB\\Project\\Models\\Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wojte\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\wojte\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

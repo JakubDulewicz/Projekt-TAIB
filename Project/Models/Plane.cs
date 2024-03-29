@@ -33,6 +33,10 @@ namespace Models
                 .HasOne(x => x.Flights)
                 .WithOne(x => x.Plane)
                 .OnDelete(DeleteBehavior.Cascade);
+            builder
+                .HasOne(x => x.Airlanes)
+                .WithMany(x => x.Planes)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

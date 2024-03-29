@@ -27,7 +27,14 @@ namespace Models
 
         public void Configure(EntityTypeBuilder<Airlane> builder)
         {
-            throw new NotImplementedException();
+            builder
+                .HasMany(x => x.Tickets)
+                .WithOne(x => x.Airlanes)
+                .OnDelete(DeleteBehavior.Cascade);
+            builder
+                .HasMany(x => x.Planes)
+                .WithOne(x => x.Airlanes)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

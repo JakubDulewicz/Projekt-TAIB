@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wojte\\source\\repos\\BiletyLotnicze\\BiletyLotnicze\\BiletyLotnicze.csproj": {}
+    "D:\\Taib\\Projekt-TAIB\\Project\\BiletyLotnicze\\BiletyLotnicze.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wojte\\source\\repos\\BiletyLotnicze\\BiletyLotnicze\\BiletyLotnicze.csproj": {
+    "D:\\Taib\\Projekt-TAIB\\Project\\BiletyLotnicze\\BiletyLotnicze.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wojte\\source\\repos\\BiletyLotnicze\\BiletyLotnicze\\BiletyLotnicze.csproj",
+        "projectUniqueName": "D:\\Taib\\Projekt-TAIB\\Project\\BiletyLotnicze\\BiletyLotnicze.csproj",
         "projectName": "BiletyLotnicze",
-        "projectPath": "C:\\Users\\wojte\\source\\repos\\BiletyLotnicze\\BiletyLotnicze\\BiletyLotnicze.csproj",
+        "projectPath": "D:\\Taib\\Projekt-TAIB\\Project\\BiletyLotnicze\\BiletyLotnicze.csproj",
         "packagesPath": "C:\\Users\\wojte\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wojte\\source\\repos\\BiletyLotnicze\\BiletyLotnicze\\obj\\",
+        "outputPath": "D:\\Taib\\Projekt-TAIB\\Project\\BiletyLotnicze\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
