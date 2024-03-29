@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "PwP1SB9Ght+YkXCW3+0vqudciaSyHGQXLgrWaokDCR+xreaTya3YLF6JF5Xs1XoeYntZeFy3vGEr6tnTr9NmFQ==",
+  "dgSpecHash": "h5XLvTXePnBcNFCGRNNfGQ5SdQmr8cHzXfCRK40EAXg7G5hP+sG2222PRFL1wQmVvep699GEsFuRsVTZUiUuFg==",
   "success": true,
   "projectFilePath": "D:\\Taib\\Projekt-TAIB\\Project\\Models\\Models.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,7 @@
     "C:\\Users\\wojte\\.nuget\\packages\\microsoft.entityframeworkcore.design\\8.0.3\\microsoft.entityframeworkcore.design.8.0.3.nupkg.sha512",
     "C:\\Users\\wojte\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.3\\microsoft.entityframeworkcore.relational.8.0.3.nupkg.sha512",
     "C:\\Users\\wojte\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.3\\microsoft.entityframeworkcore.sqlserver.8.0.3.nupkg.sha512",
+    "C:\\Users\\wojte\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.3\\microsoft.entityframeworkcore.tools.8.0.3.nupkg.sha512",
     "C:\\Users\\wojte\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\wojte\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
     "C:\\Users\\wojte\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "SUu+mlwsJl/CAV71wCFULD5D90YbNRzqEM54rfthH7/67oWfv2nj1m1I6FtCKKOsrQAtkgXB7ttX1gyirj1VKQ==",
+  "dgSpecHash": "yyTxzyqr06npDO8kXkt1jeNcv3Wobf6kzrz5IyvFNKIx9vFNihk6+Px1aMgteTn9aQ0FSVPi8jdUfSvC3Izofw==",
   "success": true,
   "projectFilePath": "D:\\Taib\\Projekt-TAIB\\Project\\BiletyLotnicze\\BiletyLotnicze.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,7 @@
     "C:\\Users\\wojte\\.nuget\\packages\\microsoft.entityframeworkcore.design\\8.0.3\\microsoft.entityframeworkcore.design.8.0.3.nupkg.sha512",
     "C:\\Users\\wojte\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.3\\microsoft.entityframeworkcore.relational.8.0.3.nupkg.sha512",
     "C:\\Users\\wojte\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.3\\microsoft.entityframeworkcore.sqlserver.8.0.3.nupkg.sha512",
+    "C:\\Users\\wojte\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.3\\microsoft.entityframeworkcore.tools.8.0.3.nupkg.sha512",
     "C:\\Users\\wojte\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\wojte\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\wojte\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
