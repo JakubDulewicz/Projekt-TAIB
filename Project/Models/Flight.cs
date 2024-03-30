@@ -40,10 +40,13 @@ namespace Models
         [Required]
         public int? AirportIdFrom { get; set; }
         [Required]
+        public int? PlaneId { get; set; }
+
+        [Required]
         public Airport AirportFrom { get; set; }
         [Required]
         public Airport AirportTo { get; set; }
-        [Required]
+        [Required,ForeignKey(nameof(PlaneId))]
         public Plane Plane { get; set; }
         [Required]
         public IEnumerable<Ticket> Tickets { get; set; }
