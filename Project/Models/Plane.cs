@@ -24,9 +24,12 @@ namespace Models
         [Required]
         public bool HasPrivateCabins { get; set; }
 
+        
+        
         public Flight Flights { get; set; }
         public Airline Airlines { get; set; }
 
+        
         public void Configure(EntityTypeBuilder<Plane> builder)
         {
             builder

@@ -25,6 +25,7 @@ namespace Models
         public string City { get; set; }
         [Required,MaxLength(50)]
         public string Address { get; set; }
+       
         [Required]
         public Flight FlightTo { get; set; }
         [Required]
@@ -32,14 +33,14 @@ namespace Models
 
         public void Configure(EntityTypeBuilder<Airport> builder)
         {
-            builder
-                .HasOne(x => x.FlightTo)
-                .WithOne(x => x.AirportTo)
-                .OnDelete(DeleteBehavior.Cascade);
-            builder
-                .HasOne(x=> x.FlightFrom)
-                .WithOne(x=> x.AirportFrom) 
-                .OnDelete(DeleteBehavior.Cascade);
+            //builder
+            //    .HasOne(x => x.FlightTo)
+            //    .WithOne(x => x.AirportTo)
+            //    .OnDelete(DeleteBehavior.Cascade);
+            //builder
+            //    .HasOne(x => x.FlightFrom)
+            //    .WithOne(x => x.AirportFrom)
+            //    .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

@@ -19,7 +19,7 @@ namespace Models
         Departed,
         Arrived
     }
-    public class Flight :IEntityTypeConfiguration<Flight>
+    public class Flight : IEntityTypeConfiguration<Flight>
     {
         [Required,Column("ID")]
         public int Id { get; set; }
@@ -33,13 +33,15 @@ namespace Models
         public DateTime Arrival { get;}
         [Required]
         public Status Status { get; set; }
+        
+        
         [Required]
-        public int AirportIdTo {  get; set; }
+        public int? AirportIdTo {  get; set; }
         [Required]
-        public int AirportIdFrom { get; set; }
-        [Required, ForeignKey(nameof(AirportIdFrom))]
+        public int? AirportIdFrom { get; set; }
+        [Required]
         public Airport AirportFrom { get; set; }
-        [Required, ForeignKey(nameof(AirportIdTo))]
+        [Required]
         public Airport AirportTo { get; set; }
         [Required]
         public Plane Plane { get; set; }
@@ -56,14 +58,14 @@ namespace Models
                 .HasOne(x => x.Plane)
                 .WithOne(x => x.Flights)
                 .OnDelete(DeleteBehavior.Cascade);
-            builder
-                .HasOne(x=> x.AirportFrom)
-                .WithOne(x=> x.FlightFrom)
-                .OnDelete(DeleteBehavior.Cascade);
-            builder
-                .HasOne(x => x.AirportTo)
-                .WithOne(x => x.FlightTo)
-                .OnDelete(DeleteBehavior.Cascade);
+            //builder
+            //    .HasOne(x => x.AirportFrom)
+            //    .WithOne(x => x.FlightFrom)
+            //    .OnDelete(DeleteBehavior.Cascade);
+            //builder
+            //    .HasOne(x => x.AirportTo)
+            //    .WithOne(x => x.FlightTo)
+            //    .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }
