@@ -56,11 +56,11 @@ namespace Models
             builder
                 .HasMany(x => x.Tickets)
                 .WithOne(x => x.Flight)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.Restrict);
             builder
                 .HasOne(x => x.Plane)
                 .WithOne(x => x.Flights)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.Restrict);
             //builder
             //    .HasOne(x => x.AirportFrom)
             //    .WithOne(x => x.FlightFrom)

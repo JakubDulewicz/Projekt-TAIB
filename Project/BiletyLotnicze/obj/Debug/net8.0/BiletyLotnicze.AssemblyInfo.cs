@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BiletyLotnicze")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+80d476cced7d6bbacacd7d0c5de8814dd5ef2af4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c7ec39ec9175364b2e14a2b35a625f369d22d74b")]
 [assembly: System.Reflection.AssemblyProductAttribute("BiletyLotnicze")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BiletyLotnicze")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

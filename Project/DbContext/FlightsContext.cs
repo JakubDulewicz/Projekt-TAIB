@@ -22,26 +22,25 @@ namespace DAL
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+           
+            //This loop is necessary bc fluent API (somehow) setup cascade onDelete behavior which causes cyclical deletion
+            foreach (var relationship in modelBuilder.Model.GetEntityTypes().SelectMany(e => e.GetForeignKeys()))
+            {
+                relationship.DeleteBehavior = DeleteBehavior.Restrict;
+            }
 
             modelBuilder.Entity<Flight>()
                 .HasOne(x => x.AirportFrom)
                 .WithOne(x => x.FlightFrom)
-                .HasForeignKey<Flight>(x => x.AirportIdFrom);
+                .HasForeignKey<Flight>(x => x.AirportIdFrom)
+                .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<Flight>()
                 .HasOne(x => x.AirportTo)
                 .WithOne(x => x.FlightTo)
-                .HasForeignKey<Flight>(x => x.AirportIdTo);
-
-            //modelBuilder.Entity<Flight>()
-            //    .HasMany(x => x.Tickets)
-            //    .WithOne(x => x.Flight)
-            //    .OnDelete(DeleteBehavior.Cascade);
-
-            //modelBuilder.Entity<Flight>()
-            //    .HasOne(x => x.Plane)
-            //    .WithOne(x => x.Flights)
-            //    .OnDelete(DeleteBehavior.Cascade);
+                .HasForeignKey<Flight>(x => x.AirportIdTo)
+                .OnDelete(DeleteBehavior.Restrict);
+                
         }
     }
 }

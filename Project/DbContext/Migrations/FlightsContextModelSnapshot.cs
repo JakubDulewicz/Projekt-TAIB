@@ -256,19 +256,19 @@ namespace DAL.Migrations
                     b.HasOne("Models.Airport", "AirportFrom")
                         .WithOne("FlightFrom")
                         .HasForeignKey("Models.Flight", "AirportIdFrom")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("Models.Airport", "AirportTo")
                         .WithOne("FlightTo")
                         .HasForeignKey("Models.Flight", "AirportIdTo")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("Models.Plane", "Plane")
                         .WithOne("Flights")
                         .HasForeignKey("Models.Flight", "PlaneId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("AirportFrom");
@@ -283,7 +283,7 @@ namespace DAL.Migrations
                     b.HasOne("Models.Airline", "Airlines")
                         .WithMany("Planes")
                         .HasForeignKey("AirlinesId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Airlines");
@@ -294,19 +294,19 @@ namespace DAL.Migrations
                     b.HasOne("Models.Airline", "Airlines")
                         .WithMany("Tickets")
                         .HasForeignKey("AirlinesId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("Models.Flight", "Flight")
                         .WithMany("Tickets")
                         .HasForeignKey("FlightId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("Models.Users", "User")
                         .WithMany("Tickets")
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Airlines");

@@ -82,7 +82,7 @@ namespace DAL.Migrations
                         column: x => x.AirlinesId,
                         principalTable: "Airlane",
                         principalColumn: "ID",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -107,19 +107,19 @@ namespace DAL.Migrations
                         column: x => x.AirportIdFrom,
                         principalTable: "Airport",
                         principalColumn: "ID",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Flight_Airport_AirportIdTo",
                         column: x => x.AirportIdTo,
                         principalTable: "Airport",
                         principalColumn: "ID",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Flight_Plane_PlaneId",
                         column: x => x.PlaneId,
                         principalTable: "Plane",
                         principalColumn: "ID",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -142,19 +142,19 @@ namespace DAL.Migrations
                         column: x => x.AirlinesId,
                         principalTable: "Airlane",
                         principalColumn: "ID",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Ticket_Flight_FlightId",
                         column: x => x.FlightId,
                         principalTable: "Flight",
                         principalColumn: "ID",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Ticket_User_UserId",
                         column: x => x.UserId,
                         principalTable: "User",
                         principalColumn: "ID",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(

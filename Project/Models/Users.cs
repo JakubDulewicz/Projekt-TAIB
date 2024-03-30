@@ -37,7 +37,7 @@ namespace Models
             builder
                 .HasMany(x => x.Tickets)
                 .WithOne(x => x.User)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

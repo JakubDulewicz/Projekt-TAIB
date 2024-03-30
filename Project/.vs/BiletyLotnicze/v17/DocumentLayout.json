@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B1143AC-BDE3-4BE6-A7BF-378B17563842}|DbContext\\DAL.csproj|e:\\studia\\taib\\projekt-taib\\project\\dbcontext\\migrations\\20240330164252_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B1143AC-BDE3-4BE6-A7BF-378B17563842}|DbContext\\DAL.csproj|solutionrelative:dbcontext\\migrations\\20240330164252_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|e:\\studia\\taib\\projekt-taib\\project\\models\\airline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|solutionrelative:models\\airline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B1143AC-BDE3-4BE6-A7BF-378B17563842}|DbContext\\DAL.csproj|e:\\studia\\taib\\projekt-taib\\project\\dbcontext\\flightscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B1143AC-BDE3-4BE6-A7BF-378B17563842}|DbContext\\DAL.csproj|solutionrelative:dbcontext\\flightscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|e:\\studia\\taib\\projekt-taib\\project\\models\\airport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|solutionrelative:models\\airport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B1143AC-BDE3-4BE6-A7BF-378B17563842}|DbContext\\DAL.csproj|e:\\studia\\taib\\projekt-taib\\project\\dbcontext\\migrations\\flightscontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B1143AC-BDE3-4BE6-A7BF-378B17563842}|DbContext\\DAL.csproj|solutionrelative:dbcontext\\migrations\\flightscontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|e:\\studia\\taib\\projekt-taib\\project\\models\\flight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|solutionrelative:models\\flight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A9B69C27-672C-4FC1-98DF-1CFE9B8209E9}|BiletyLotnicze\\BiletyLotnicze.csproj|e:\\studia\\taib\\projekt-taib\\project\\biletylotnicze\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9B69C27-672C-4FC1-98DF-1CFE9B8209E9}|BiletyLotnicze\\BiletyLotnicze.csproj|solutionrelative:biletylotnicze\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B1143AC-BDE3-4BE6-A7BF-378B17563842}|DbContext\\DAL.csproj|e:\\studia\\taib\\projekt-taib\\project\\dbcontext\\migrations\\20240330174759_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B1143AC-BDE3-4BE6-A7BF-378B17563842}|DbContext\\DAL.csproj|solutionrelative:dbcontext\\migrations\\20240330174759_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A9B69C27-672C-4FC1-98DF-1CFE9B8209E9}|BiletyLotnicze\\BiletyLotnicze.csproj|e:\\studia\\taib\\projekt-taib\\project\\biletylotnicze\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9B69C27-672C-4FC1-98DF-1CFE9B8209E9}|BiletyLotnicze\\BiletyLotnicze.csproj|solutionrelative:biletylotnicze\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9B69C27-672C-4FC1-98DF-1CFE9B8209E9}|BiletyLotnicze\\BiletyLotnicze.csproj|e:\\studia\\taib\\projekt-taib\\project\\biletylotnicze\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9B69C27-672C-4FC1-98DF-1CFE9B8209E9}|BiletyLotnicze\\BiletyLotnicze.csproj|solutionrelative:biletylotnicze\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|e:\\studia\\taib\\projekt-taib\\project\\models\\plane.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,12 +35,16 @@
       "RelativeMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|solutionrelative:models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|e:\\studia\\taib\\projekt-taib\\project\\models\\airline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|solutionrelative:models\\airline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|e:\\studia\\taib\\projekt-taib\\project\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|solutionrelative:models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B1143AC-BDE3-4BE6-A7BF-378B17563842}|DbContext\\DAL.csproj|e:\\studia\\taib\\projekt-taib\\project\\dbcontext\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1B1143AC-BDE3-4BE6-A7BF-378B17563842}|DbContext\\DAL.csproj|solutionrelative:dbcontext\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9B69C27-672C-4FC1-98DF-1CFE9B8209E9}|BiletyLotnicze\\BiletyLotnicze.csproj|e:\\studia\\taib\\projekt-taib\\project\\biletylotnicze\\biletylotnicze.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A9B69C27-672C-4FC1-98DF-1CFE9B8209E9}|BiletyLotnicze\\BiletyLotnicze.csproj|solutionrelative:biletylotnicze\\biletylotnicze.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|e:\\studia\\taib\\projekt-taib\\project\\models\\models.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -54,19 +58,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 183,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20240330164252_Initial.cs",
-              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\DbContext\\Migrations\\20240330164252_Initial.cs",
-              "RelativeDocumentMoniker": "DbContext\\Migrations\\20240330164252_Initial.cs",
-              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\DbContext\\Migrations\\20240330164252_Initial.cs",
-              "RelativeToolTip": "DbContext\\Migrations\\20240330164252_Initial.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHMAAAA4AAAA",
+              "DocumentIndex": 2,
+              "Title": "FlightsContextModelSnapshot.cs",
+              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\DbContext\\Migrations\\FlightsContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "DbContext\\Migrations\\FlightsContextModelSnapshot.cs",
+              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\DbContext\\Migrations\\FlightsContextModelSnapshot.cs",
+              "RelativeToolTip": "DbContext\\Migrations\\FlightsContextModelSnapshot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T16:42:52.413Z",
+              "WhenOpened": "2024-03-30T17:48:38.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20240330174759_Initial.cs",
+              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\DbContext\\Migrations\\20240330174759_Initial.cs",
+              "RelativeDocumentMoniker": "DbContext\\Migrations\\20240330174759_Initial.cs",
+              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\DbContext\\Migrations\\20240330174759_Initial.cs",
+              "RelativeToolTip": "DbContext\\Migrations\\20240330174759_Initial.cs",
+              "ViewState": "AQIAAI8AAAAAAAAAAAAuwFQAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-30T17:48:00.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DAL.csproj",
+              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\DbContext\\DAL.csproj",
+              "RelativeDocumentMoniker": "DbContext\\DAL.csproj",
+              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\DbContext\\DAL.csproj",
+              "RelativeToolTip": "DbContext\\DAL.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-30T17:00:44.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BiletyLotnicze.csproj",
+              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BiletyLotnicze\\BiletyLotnicze.csproj",
+              "RelativeDocumentMoniker": "BiletyLotnicze\\BiletyLotnicze.csproj",
+              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BiletyLotnicze\\BiletyLotnicze.csproj",
+              "RelativeToolTip": "BiletyLotnicze\\BiletyLotnicze.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-30T17:00:25.2Z",
               "EditorCaption": ""
             },
             {
@@ -77,14 +120,14 @@
               "RelativeDocumentMoniker": "DbContext\\FlightsContext.cs",
               "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\DbContext\\FlightsContext.cs",
               "RelativeToolTip": "DbContext\\FlightsContext.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAzwBIAAAD8AAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAA/wBwAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-30T14:48:00.174Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BiletyLotnicze\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "BiletyLotnicze\\WeatherForecast.cs",
@@ -97,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BiletyLotnicze\\Program.cs",
               "RelativeDocumentMoniker": "BiletyLotnicze\\Program.cs",
@@ -116,33 +159,36 @@
               "RelativeDocumentMoniker": "Models\\Ticket.cs",
               "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Ticket.cs",
               "RelativeToolTip": "Models\\Ticket.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAowCEAAAATAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAAiwCcAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T14:48:00.179Z"
+              "WhenOpened": "2024-03-30T14:48:00.179Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "Users.cs",
               "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Users.cs",
               "RelativeDocumentMoniker": "Models\\Users.cs",
               "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Users.cs",
               "RelativeToolTip": "Models\\Users.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwCcAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T14:48:00.183Z"
+              "WhenOpened": "2024-03-30T14:48:00.183Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Models.csproj",
-              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Models.csproj",
-              "RelativeDocumentMoniker": "Models\\Models.csproj",
-              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Models.csproj",
-              "RelativeToolTip": "Models\\Models.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-30T14:47:59.881Z"
+              "DocumentIndex": 0,
+              "Title": "Airline.cs",
+              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Airline.cs",
+              "RelativeDocumentMoniker": "Models\\Airline.cs",
+              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Airline.cs",
+              "RelativeToolTip": "Models\\Airline.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAArwBkAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-30T14:48:00.2Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -152,89 +198,22 @@
               "RelativeDocumentMoniker": "Models\\Plane.cs",
               "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Plane.cs",
               "RelativeToolTip": "Models\\Plane.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAIA+wCEAAAAJAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAIA4wCkAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-30T14:48:00.195Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Airline.cs",
-              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Airline.cs",
-              "RelativeDocumentMoniker": "Models\\Airline.cs",
-              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Airline.cs",
-              "RelativeToolTip": "Models\\Airline.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAnwBsAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T14:48:00.2Z"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "799f7148-ffc1-4fea-a9d9-1183c19f6ffc",
-        "Display": 0,
-        "X": -260,
-        "Y": 226,
-        "Width": 856,
-        "Height": 762,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Flight.cs",
-              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Flight.cs",
-              "RelativeDocumentMoniker": "Models\\Flight.cs",
-              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Flight.cs",
-              "RelativeToolTip": "Models\\Flight.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAowDAAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T14:48:00.189Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "985f2d75-930c-462c-9f85-bf8e223b7e2c",
-        "Display": 0,
-        "X": 566,
-        "Y": 138,
-        "Width": 926,
-        "Height": 762,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Airport.cs",
-              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Airport.cs",
-              "RelativeDocumentMoniker": "Models\\Airport.cs",
-              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Airport.cs",
-              "RelativeToolTip": "Models\\Airport.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwCAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-30T14:48:00.186Z",
+              "DocumentIndex": 11,
+              "Title": "Models.csproj",
+              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Models.csproj",
+              "RelativeDocumentMoniker": "Models\\Models.csproj",
+              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Models.csproj",
+              "RelativeToolTip": "Models\\Models.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-30T14:47:59.881Z",
               "EditorCaption": ""
             }
           ]
