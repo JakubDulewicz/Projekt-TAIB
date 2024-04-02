@@ -12,5 +12,9 @@ namespace BLL
         public string Name { get; init; }
         public string Country { get; init; }
         public string Logo { get; init; }
+
+        public IEnumerable<PlaneDTO> Planes { get; init; }
+
+        public IEnumerable<TicketDTO> Ticket { get; init; }
     }
 }

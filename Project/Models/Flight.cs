@@ -30,7 +30,7 @@ namespace Models
         [Required]
         public DateTime Departure { get; set; }
         [Required]
-        public DateTime Arrival { get;}
+        public DateTime Arrival { get; set; }
         [Required]
         public Status Status { get; set; }
         
