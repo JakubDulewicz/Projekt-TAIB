@@ -8,8 +8,8 @@ namespace BLL
 {
     public interface ITicketService
     {
-        Task AddTicket(int ticketId, int flightId);
-        Task DeleteTicket(int ticketId);
-        Task<int> GetTicketCount(int ticketId);
+        Task AddTicket(TicketDTO ticketId, FlightDTO flightId);
+        Task DeleteTicket(TicketDTO ticketId);
+        Task<IEnumerable<TicketDTO>> GetTickets(TicketDTO Ticket);
     }
 }

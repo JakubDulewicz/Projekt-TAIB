@@ -9,17 +9,17 @@ namespace BLL_EF
 {
     public class FlightService : IFlightService
     {
-        public Task CreateFlight(int flightId)
+        public Task CreateFlight(FlightDTO flightId)
         {
             throw new NotImplementedException();
         }
 
-        public Task DeleteFlight(int flightId)
+        public Task DeleteFlight(FlightDTO flightId)
         {
             throw new NotImplementedException();
         }
 
-        Task<IEnumerable<FlightDTO>> IFlightService.GetFlights(int flightId)
+        public Task<IEnumerable<FlightDTO>> GetFlights(FlightDTO flightId)
         {
             throw new NotImplementedException();
         }

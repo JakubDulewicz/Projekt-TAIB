@@ -9,12 +9,12 @@ namespace BLL_EF
 {
     public class AirportService : IAirportService
     {
-        public Task AddAirport(int airportId)
+        public Task AddAirport(AirportDTO airportId)
         {
             throw new NotImplementedException();
         }
 
-        public Task RemoveAirport(int airportId)
+        public Task RemoveAirport(AirportDTO airportId)
         {
             throw new NotImplementedException();
         }

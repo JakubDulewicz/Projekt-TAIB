@@ -4157,8 +4157,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Models.csproj": {
-              "projectPath": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Models.csproj"
+            "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\Models\\Models.csproj": {
+              "projectPath": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\Models\\Models.csproj"
             }
           }
         }
@@ -4220,7 +4220,7 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Wystąpił problem podczas czytania pliku pamięci podręcznej E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BLL\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+      "message": "Wystąpił problem podczas czytania pliku pamięci podręcznej D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
     }
   ]
 }

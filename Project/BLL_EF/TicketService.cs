@@ -9,17 +9,18 @@ namespace BLL_EF
 {
     public class TicketService : ITicketService
     {
-        public Task AddTicket(int ticketId, int flightId)
+
+        public Task AddTicket(TicketDTO ticketId, FlightDTO flightId)
         {
             throw new NotImplementedException();
         }
 
-        public Task DeleteTicket(int ticketId)
+        public Task DeleteTicket(TicketDTO ticketId)
         {
             throw new NotImplementedException();
         }
 
-        public Task<int> GetTicketCount(int ticketId)
+        public Task<IEnumerable<TicketDTO>> GetTickets(TicketDTO Ticket) 
         {
             throw new NotImplementedException();
         }

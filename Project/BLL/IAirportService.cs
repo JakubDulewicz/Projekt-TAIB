@@ -8,8 +8,8 @@ namespace BLL
 {
     public interface IAirportService
     {
-        Task AddAirport(int airportId);
-        Task RemoveAirport(int airportId);
+        Task AddAirport(AirportDTO airportId);
+        Task RemoveAirport(AirportDTO airportId);
 
     }
 }

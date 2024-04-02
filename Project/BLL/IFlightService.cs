@@ -8,8 +8,8 @@ namespace BLL
 {
     public interface IFlightService
     {
-        Task CreateFlight(int flightId);
-        Task DeleteFlight(int flightId);
-        Task<IEnumerable<FlightDTO>> GetFlights(int flightId);
+        Task CreateFlight(FlightDTO flightId);
+        Task DeleteFlight(FlightDTO flightId);
+        Task<IEnumerable<FlightDTO>> GetFlights(FlightDTO flightId);
     }
 }
