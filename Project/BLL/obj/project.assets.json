@@ -2228,23 +2228,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lukus\\.nuget\\packages\\": {},
+    "C:\\Users\\jdulewicz\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL\\BLL.csproj",
+      "projectUniqueName": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BLL\\BLL.csproj",
       "projectName": "BLL",
-      "projectPath": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL\\BLL.csproj",
-      "packagesPath": "C:\\Users\\lukus\\.nuget\\packages\\",
-      "outputPath": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL\\obj\\",
+      "projectPath": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BLL\\BLL.csproj",
+      "packagesPath": "C:\\Users\\jdulewicz\\.nuget\\packages\\",
+      "outputPath": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BLL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\lukus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jdulewicz\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2253,6 +2253,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
