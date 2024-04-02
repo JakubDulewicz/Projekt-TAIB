@@ -10,6 +10,6 @@ namespace BLL
     {
         Task CreateFlight(int flightId);
         Task DeleteFlight(int flightId);
-        Task<IEnumerable<>>
+        Task<IEnumerable<FlightDTO>> GetFlights(int flightId);
     }
 }

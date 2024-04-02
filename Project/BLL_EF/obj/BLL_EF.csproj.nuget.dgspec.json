@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL\\BLL.csproj": {}
+    "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL_EF\\BLL_EF.csproj": {}
   },
   "projects": {
     "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL\\BLL.csproj": {
@@ -31,11 +31,7 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {
-              "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Models.csproj": {
-                "projectPath": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Models.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -90,20 +86,20 @@
         }
       }
     },
-    "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Models.csproj": {
+    "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL_EF\\BLL_EF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Models.csproj",
-        "projectName": "Models",
-        "projectPath": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Models.csproj",
-        "packagesPath": "C:\\Users\\jdulewicz\\.nuget\\packages\\",
-        "outputPath": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\obj\\",
+        "projectUniqueName": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL_EF\\BLL_EF.csproj",
+        "projectName": "BLL_EF",
+        "projectPath": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL_EF\\BLL_EF.csproj",
+        "packagesPath": "C:\\Users\\lukus\\.nuget\\packages\\",
+        "outputPath": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL_EF\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\jdulewicz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lukus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -112,13 +108,16 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL\\BLL.csproj": {
+                "projectPath": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL\\BLL.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -137,16 +136,6 @@
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[8.0.3, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.3, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.3, )"
             },
