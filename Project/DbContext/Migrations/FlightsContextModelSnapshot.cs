@@ -48,7 +48,7 @@ namespace DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Airlane");
+                    b.ToTable("Airline");
                 });
 
             modelBuilder.Entity("Models.Airport", b =>

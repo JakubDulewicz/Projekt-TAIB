@@ -12,7 +12,7 @@ namespace DAL.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Airlane",
+                name: "Airline",
                 columns: table => new
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
@@ -23,7 +23,7 @@ namespace DAL.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Airlane", x => x.ID);
+                    table.PrimaryKey("PK_Airline", x => x.ID);
                 });
 
             migrationBuilder.CreateTable(
@@ -78,9 +78,9 @@ namespace DAL.Migrations
                 {
                     table.PrimaryKey("PK_Plane", x => x.ID);
                     table.ForeignKey(
-                        name: "FK_Plane_Airlane_AirlinesId",
+                        name: "FK_Plane_Airline_AirlinesId",
                         column: x => x.AirlinesId,
-                        principalTable: "Airlane",
+                        principalTable: "Airline",
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Restrict);
                 });
@@ -138,9 +138,9 @@ namespace DAL.Migrations
                 {
                     table.PrimaryKey("PK_Ticket", x => x.ID);
                     table.ForeignKey(
-                        name: "FK_Ticket_Airlane_AirlinesId",
+                        name: "FK_Ticket_Airline_AirlinesId",
                         column: x => x.AirlinesId,
-                        principalTable: "Airlane",
+                        principalTable: "Airline",
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
@@ -215,7 +215,7 @@ namespace DAL.Migrations
                 name: "Plane");
 
             migrationBuilder.DropTable(
-                name: "Airlane");
+                name: "Airline");
         }
     }
 }

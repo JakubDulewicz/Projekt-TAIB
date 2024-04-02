@@ -28,3 +28,18 @@ E:\Studia\TAIB\Projekt-TAIB\Project\Models\obj\Debug\net8.0\refint\Models.dll
 E:\Studia\TAIB\Projekt-TAIB\Project\Models\obj\Debug\net8.0\Models.pdb
 E:\Studia\TAIB\Projekt-TAIB\Project\Models\obj\Debug\net8.0\Models.genruntimeconfig.cache
 E:\Studia\TAIB\Projekt-TAIB\Project\Models\obj\Debug\net8.0\ref\Models.dll
+D:\KOLOS REPO\Projekt-TAIB\Project\Models\bin\Debug\net8.0\Models.deps.json
+D:\KOLOS REPO\Projekt-TAIB\Project\Models\bin\Debug\net8.0\Models.runtimeconfig.json
+D:\KOLOS REPO\Projekt-TAIB\Project\Models\bin\Debug\net8.0\Models.dll
+D:\KOLOS REPO\Projekt-TAIB\Project\Models\bin\Debug\net8.0\Models.pdb
+D:\KOLOS REPO\Projekt-TAIB\Project\Models\obj\Debug\net8.0\Models.csproj.AssemblyReference.cache
+D:\KOLOS REPO\Projekt-TAIB\Project\Models\obj\Debug\net8.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\KOLOS REPO\Projekt-TAIB\Project\Models\obj\Debug\net8.0\Models.AssemblyInfoInputs.cache
+D:\KOLOS REPO\Projekt-TAIB\Project\Models\obj\Debug\net8.0\Models.AssemblyInfo.cs
+D:\KOLOS REPO\Projekt-TAIB\Project\Models\obj\Debug\net8.0\Models.csproj.CoreCompileInputs.cache
+D:\KOLOS REPO\Projekt-TAIB\Project\Models\obj\Debug\net8.0\Models.sourcelink.json
+D:\KOLOS REPO\Projekt-TAIB\Project\Models\obj\Debug\net8.0\Models.dll
+D:\KOLOS REPO\Projekt-TAIB\Project\Models\obj\Debug\net8.0\refint\Models.dll
+D:\KOLOS REPO\Projekt-TAIB\Project\Models\obj\Debug\net8.0\Models.pdb
+D:\KOLOS REPO\Projekt-TAIB\Project\Models\obj\Debug\net8.0\Models.genruntimeconfig.cache
+D:\KOLOS REPO\Projekt-TAIB\Project\Models\obj\Debug\net8.0\ref\Models.dll

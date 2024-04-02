@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DAL.Migrations
 {
     [DbContext(typeof(FlightsContext))]
-    [Migration("20240330174759_Initial")]
+    [Migration("20240402155707_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -51,7 +51,7 @@ namespace DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Airlane");
+                    b.ToTable("Airline");
                 });
 
             modelBuilder.Entity("Models.Airport", b =>

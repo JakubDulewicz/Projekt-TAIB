@@ -6,7 +6,7 @@ namespace DAL
     public class FlightsContext : DbContext
     {
         public DbSet<Users> User { get; set; }
-        public DbSet<Airline> Airlane { get; set; }
+        public DbSet<Airline> Airline { get; set; }
         public DbSet<Airport> Airport { get; set; }
         public DbSet<Flight> Flight { get; set; }
         public DbSet<Plane> Plane { get; set; }
@@ -16,7 +16,7 @@ namespace DAL
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=TicketService;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
+            optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=BiletyLotnicze;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
