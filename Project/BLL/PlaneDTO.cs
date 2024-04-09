@@ -15,7 +15,7 @@ namespace BLL
         public DateOnly YearOfProduction { get; init; }
         public int SeatCount { get; init; }
         public bool HasPrivateCabins { get; init; }
-        public int FlightId { get; init; }
-        public int AirlineId { get; init; }
+        public FlightDTO? Flights { get; init; }
+        public AirlineDTO? Airlines { get; init; }
     }
 }
