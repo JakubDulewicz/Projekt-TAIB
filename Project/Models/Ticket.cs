@@ -24,6 +24,8 @@ namespace Models
         public string Seat { get; set; }
         [Required]
         public Class Class { get; set; }
+        [Required]
+        public double Price { get; set; }
         public Users User { get; set; }
         public int FlightId {  get; set; }
         [ForeignKey(nameof (FlightId))]

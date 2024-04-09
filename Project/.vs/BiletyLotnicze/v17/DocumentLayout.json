@@ -1,106 +1,62 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\",
+  "WorkspaceRootPath": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|e:\\studia\\taib\\projekt-taib\\project\\models\\airline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|solutionrelative:models\\airline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E12E8301-3876-4014-952F-D4129BDF23C9}|BLL_EF\\BLL_EF.csproj|d:\\kolos repo\\projekt-taib\\project\\bll_ef\\ticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E12E8301-3876-4014-952F-D4129BDF23C9}|BLL_EF\\BLL_EF.csproj|solutionrelative:bll_ef\\ticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63E6FB86-05B0-44B9-8F09-C88960017AF8}|BLL\\BLL.csproj|e:\\studia\\taib\\projekt-taib\\project\\bll\\airlinedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63E6FB86-05B0-44B9-8F09-C88960017AF8}|BLL\\BLL.csproj|solutionrelative:bll\\airlinedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63E6FB86-05B0-44B9-8F09-C88960017AF8}|BLL\\BLL.csproj|e:\\studia\\taib\\projekt-taib\\project\\bll\\airportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63E6FB86-05B0-44B9-8F09-C88960017AF8}|BLL\\BLL.csproj|solutionrelative:bll\\airportdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|e:\\studia\\taib\\projekt-taib\\project\\models\\airport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|solutionrelative:models\\airport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63E6FB86-05B0-44B9-8F09-C88960017AF8}|BLL\\BLL.csproj|e:\\studia\\taib\\projekt-taib\\project\\bll\\flightdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63E6FB86-05B0-44B9-8F09-C88960017AF8}|BLL\\BLL.csproj|solutionrelative:bll\\flightdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|e:\\studia\\taib\\projekt-taib\\project\\models\\flight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|solutionrelative:models\\flight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B1143AC-BDE3-4BE6-A7BF-378B17563842}|DbContext\\DAL.csproj|e:\\studia\\taib\\projekt-taib\\project\\dbcontext\\flightscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B1143AC-BDE3-4BE6-A7BF-378B17563842}|DbContext\\DAL.csproj|solutionrelative:dbcontext\\flightscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|e:\\studia\\taib\\projekt-taib\\project\\models\\plane.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|solutionrelative:models\\plane.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63E6FB86-05B0-44B9-8F09-C88960017AF8}|BLL\\BLL.csproj|e:\\studia\\taib\\projekt-taib\\project\\bll\\planedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63E6FB86-05B0-44B9-8F09-C88960017AF8}|BLL\\BLL.csproj|solutionrelative:bll\\planedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E12E8301-3876-4014-952F-D4129BDF23C9}|BLL_EF\\BLL_EF.csproj|e:\\studia\\taib\\projekt-taib\\project\\bll_ef\\flightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E12E8301-3876-4014-952F-D4129BDF23C9}|BLL_EF\\BLL_EF.csproj|solutionrelative:bll_ef\\flightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A9B69C27-672C-4FC1-98DF-1CFE9B8209E9}|BiletyLotnicze\\BiletyLotnicze.csproj|e:\\studia\\taib\\projekt-taib\\project\\biletylotnicze\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9B69C27-672C-4FC1-98DF-1CFE9B8209E9}|BiletyLotnicze\\BiletyLotnicze.csproj|solutionrelative:biletylotnicze\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|e:\\studia\\taib\\projekt-taib\\project\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|solutionrelative:models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63E6FB86-05B0-44B9-8F09-C88960017AF8}|BLL\\BLL.csproj|e:\\studia\\taib\\projekt-taib\\project\\bll\\ticketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{63E6FB86-05B0-44B9-8F09-C88960017AF8}|BLL\\BLL.csproj|d:\\kolos repo\\projekt-taib\\project\\bll\\ticketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63E6FB86-05B0-44B9-8F09-C88960017AF8}|BLL\\BLL.csproj|solutionrelative:bll\\ticketdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|e:\\studia\\taib\\projekt-taib\\project\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|solutionrelative:models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63E6FB86-05B0-44B9-8F09-C88960017AF8}|BLL\\BLL.csproj|e:\\studia\\taib\\projekt-taib\\project\\bll\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63E6FB86-05B0-44B9-8F09-C88960017AF8}|BLL\\BLL.csproj|solutionrelative:bll\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E12E8301-3876-4014-952F-D4129BDF23C9}|BLL_EF\\BLL_EF.csproj|e:\\studia\\taib\\projekt-taib\\project\\bll_ef\\airportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E12E8301-3876-4014-952F-D4129BDF23C9}|BLL_EF\\BLL_EF.csproj|solutionrelative:bll_ef\\airportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\DbContext\\Migrations\\20240409163559_MigrationTest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DbContext\\Migrations\\20240409163559_MigrationTest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\DbContext\\Migrations\\20240409162603_MigrationTest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DbContext\\Migrations\\20240409162603_MigrationTest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B1143AC-BDE3-4BE6-A7BF-378B17563842}|DbContext\\DAL.csproj|e:\\studia\\taib\\projekt-taib\\project\\dbcontext\\migrations\\20240402155707_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B1143AC-BDE3-4BE6-A7BF-378B17563842}|DbContext\\DAL.csproj|solutionrelative:dbcontext\\migrations\\20240402155707_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A9B69C27-672C-4FC1-98DF-1CFE9B8209E9}|BiletyLotnicze\\BiletyLotnicze.csproj|e:\\studia\\taib\\projekt-taib\\project\\biletylotnicze\\biletylotnicze.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{A9B69C27-672C-4FC1-98DF-1CFE9B8209E9}|BiletyLotnicze\\BiletyLotnicze.csproj|solutionrelative:biletylotnicze\\biletylotnicze.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B1143AC-BDE3-4BE6-A7BF-378B17563842}|DbContext\\DAL.csproj|e:\\studia\\taib\\projekt-taib\\project\\dbcontext\\migrations\\flightscontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B1143AC-BDE3-4BE6-A7BF-378B17563842}|DbContext\\DAL.csproj|solutionrelative:dbcontext\\migrations\\flightscontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63E6FB86-05B0-44B9-8F09-C88960017AF8}|BLL\\BLL.csproj|e:\\studia\\taib\\projekt-taib\\project\\bll\\iairportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63E6FB86-05B0-44B9-8F09-C88960017AF8}|BLL\\BLL.csproj|solutionrelative:bll\\iairportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63E6FB86-05B0-44B9-8F09-C88960017AF8}|BLL\\BLL.csproj|e:\\studia\\taib\\projekt-taib\\project\\bll\\iflightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63E6FB86-05B0-44B9-8F09-C88960017AF8}|BLL\\BLL.csproj|solutionrelative:bll\\iflightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63E6FB86-05B0-44B9-8F09-C88960017AF8}|BLL\\BLL.csproj|e:\\studia\\taib\\projekt-taib\\project\\bll\\iticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{63E6FB86-05B0-44B9-8F09-C88960017AF8}|BLL\\BLL.csproj|d:\\kolos repo\\projekt-taib\\project\\bll\\iticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{63E6FB86-05B0-44B9-8F09-C88960017AF8}|BLL\\BLL.csproj|solutionrelative:bll\\iticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E12E8301-3876-4014-952F-D4129BDF23C9}|BLL_EF\\BLL_EF.csproj|e:\\studia\\taib\\projekt-taib\\project\\bll_ef\\ticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E12E8301-3876-4014-952F-D4129BDF23C9}|BLL_EF\\BLL_EF.csproj|solutionrelative:bll_ef\\ticketservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1B1143AC-BDE3-4BE6-A7BF-378B17563842}|DbContext\\DAL.csproj|d:\\kolos repo\\projekt-taib\\project\\dbcontext\\flightscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B1143AC-BDE3-4BE6-A7BF-378B17563842}|DbContext\\DAL.csproj|solutionrelative:dbcontext\\flightscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|d:\\kolos repo\\projekt-taib\\project\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|solutionrelative:models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63E6FB86-05B0-44B9-8F09-C88960017AF8}|BLL\\BLL.csproj|d:\\kolos repo\\projekt-taib\\project\\bll\\iflightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63E6FB86-05B0-44B9-8F09-C88960017AF8}|BLL\\BLL.csproj|solutionrelative:bll\\iflightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63E6FB86-05B0-44B9-8F09-C88960017AF8}|BLL\\BLL.csproj|d:\\kolos repo\\projekt-taib\\project\\bll\\flightdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63E6FB86-05B0-44B9-8F09-C88960017AF8}|BLL\\BLL.csproj|solutionrelative:bll\\flightdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{63E6FB86-05B0-44B9-8F09-C88960017AF8}|BLL\\BLL.csproj|d:\\kolos repo\\projekt-taib\\project\\bll\\airlinedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63E6FB86-05B0-44B9-8F09-C88960017AF8}|BLL\\BLL.csproj|solutionrelative:bll\\airlinedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|d:\\kolos repo\\projekt-taib\\project\\models\\airport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|solutionrelative:models\\airport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|d:\\kolos repo\\projekt-taib\\project\\models\\plane.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|solutionrelative:models\\plane.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E12E8301-3876-4014-952F-D4129BDF23C9}|BLL_EF\\BLL_EF.csproj|d:\\kolos repo\\projekt-taib\\project\\bll_ef\\flightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E12E8301-3876-4014-952F-D4129BDF23C9}|BLL_EF\\BLL_EF.csproj|solutionrelative:bll_ef\\flightservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9B69C27-672C-4FC1-98DF-1CFE9B8209E9}|BiletyLotnicze\\BiletyLotnicze.csproj|d:\\kolos repo\\projekt-taib\\project\\biletylotnicze\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9B69C27-672C-4FC1-98DF-1CFE9B8209E9}|BiletyLotnicze\\BiletyLotnicze.csproj|solutionrelative:biletylotnicze\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|d:\\kolos repo\\projekt-taib\\project\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6524F54-78D7-42EE-B228-162F0A973D05}|Models\\Models.csproj|solutionrelative:models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E12E8301-3876-4014-952F-D4129BDF23C9}|BLL_EF\\BLL_EF.csproj|d:\\kolos repo\\projekt-taib\\project\\bll_ef\\airportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E12E8301-3876-4014-952F-D4129BDF23C9}|BLL_EF\\BLL_EF.csproj|solutionrelative:bll_ef\\airportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -109,329 +65,187 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 164,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 216,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Flight.cs",
-              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Flight.cs",
-              "RelativeDocumentMoniker": "Models\\Flight.cs",
-              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Flight.cs",
-              "RelativeToolTip": "Models\\Flight.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAA9wDEAAAAZAAAA",
+              "DocumentIndex": 7,
+              "Title": "AirlineDTO.cs",
+              "DocumentMoniker": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL\\AirlineDTO.cs",
+              "RelativeDocumentMoniker": "BLL\\AirlineDTO.cs",
+              "ToolTip": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL\\AirlineDTO.cs",
+              "RelativeToolTip": "BLL\\AirlineDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T17:00:14.852Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PlaneDTO.cs",
-              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BLL\\PlaneDTO.cs",
-              "RelativeDocumentMoniker": "BLL\\PlaneDTO.cs",
-              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BLL\\PlaneDTO.cs",
-              "RelativeToolTip": "BLL\\PlaneDTO.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T16:53:19.587Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AirportDTO.cs",
-              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BLL\\AirportDTO.cs",
-              "RelativeDocumentMoniker": "BLL\\AirportDTO.cs",
-              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BLL\\AirportDTO.cs",
-              "RelativeToolTip": "BLL\\AirportDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T16:53:03.503Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T16:49:59.874Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Airline.cs",
-              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Airline.cs",
-              "RelativeDocumentMoniker": "Models\\Airline.cs",
-              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Airline.cs",
-              "RelativeToolTip": "Models\\Airline.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAASAAAA",
+              "Title": "TicketService.cs",
+              "DocumentMoniker": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL_EF\\TicketService.cs",
+              "RelativeDocumentMoniker": "BLL_EF\\TicketService.cs",
+              "ToolTip": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL_EF\\TicketService.cs",
+              "RelativeToolTip": "BLL_EF\\TicketService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T16:55:23.03Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "TicketDTO.cs",
-              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BLL\\TicketDTO.cs",
-              "RelativeDocumentMoniker": "BLL\\TicketDTO.cs",
-              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BLL\\TicketDTO.cs",
-              "RelativeToolTip": "BLL\\TicketDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T16:56:53.437Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UserDTO.cs",
-              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BLL\\UserDTO.cs",
-              "RelativeDocumentMoniker": "BLL\\UserDTO.cs",
-              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BLL\\UserDTO.cs",
-              "RelativeToolTip": "BLL\\UserDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T16:49:59.735Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "20240409162603_MigrationTest.cs",
-              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\DbContext\\Migrations\\20240409162603_MigrationTest.cs",
-              "RelativeDocumentMoniker": "DbContext\\Migrations\\20240409162603_MigrationTest.cs",
-              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\DbContext\\Migrations\\20240409162603_MigrationTest.cs",
-              "RelativeToolTip": "DbContext\\Migrations\\20240409162603_MigrationTest.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwCQAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T16:26:03.351Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "20240402155707_Initial.cs",
-              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\DbContext\\Migrations\\20240402155707_Initial.cs",
-              "RelativeDocumentMoniker": "DbContext\\Migrations\\20240402155707_Initial.cs",
-              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\DbContext\\Migrations\\20240402155707_Initial.cs",
-              "RelativeToolTip": "DbContext\\Migrations\\20240402155707_Initial.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T16:24:26.732Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "20240409163559_MigrationTest.cs",
-              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\DbContext\\Migrations\\20240409163559_MigrationTest.cs",
-              "RelativeDocumentMoniker": "DbContext\\Migrations\\20240409163559_MigrationTest.cs",
-              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\DbContext\\Migrations\\20240409163559_MigrationTest.cs",
-              "RelativeToolTip": "DbContext\\Migrations\\20240409163559_MigrationTest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T16:35:59.447Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "BiletyLotnicze.csproj",
-              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BiletyLotnicze\\BiletyLotnicze.csproj",
-              "RelativeDocumentMoniker": "BiletyLotnicze\\BiletyLotnicze.csproj",
-              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BiletyLotnicze\\BiletyLotnicze.csproj",
-              "RelativeToolTip": "BiletyLotnicze\\BiletyLotnicze.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-09T16:25:29.92Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "FlightsContextModelSnapshot.cs",
-              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\DbContext\\Migrations\\FlightsContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "DbContext\\Migrations\\FlightsContextModelSnapshot.cs",
-              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\DbContext\\Migrations\\FlightsContextModelSnapshot.cs",
-              "RelativeToolTip": "DbContext\\Migrations\\FlightsContextModelSnapshot.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T16:24:26.168Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "IFlightService.cs",
-              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BLL\\IFlightService.cs",
-              "RelativeDocumentMoniker": "BLL\\IFlightService.cs",
-              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BLL\\IFlightService.cs",
-              "RelativeToolTip": "BLL\\IFlightService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T16:49:59.733Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "IAirportService.cs",
-              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BLL\\IAirportService.cs",
-              "RelativeDocumentMoniker": "BLL\\IAirportService.cs",
-              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BLL\\IAirportService.cs",
-              "RelativeToolTip": "BLL\\IAirportService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T16:49:59.879Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "ITicketService.cs",
-              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BLL\\ITicketService.cs",
-              "RelativeDocumentMoniker": "BLL\\ITicketService.cs",
-              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BLL\\ITicketService.cs",
-              "RelativeToolTip": "BLL\\ITicketService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T16:49:59.881Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 216,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AirlineDTO.cs",
-              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BLL\\AirlineDTO.cs",
-              "RelativeDocumentMoniker": "BLL\\AirlineDTO.cs",
-              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BLL\\AirlineDTO.cs",
-              "RelativeToolTip": "BLL\\AirlineDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T16:49:59.874Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Airport.cs",
-              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Airport.cs",
-              "RelativeDocumentMoniker": "Models\\Airport.cs",
-              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Airport.cs",
-              "RelativeToolTip": "Models\\Airport.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAuwB8AAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T16:24:33.99Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FlightDTO.cs",
-              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BLL\\FlightDTO.cs",
-              "RelativeDocumentMoniker": "BLL\\FlightDTO.cs",
-              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BLL\\FlightDTO.cs",
-              "RelativeToolTip": "BLL\\FlightDTO.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T16:49:59.876Z",
+              "WhenOpened": "2024-04-02T17:08:25.985Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "FlightsContext.cs",
-              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\DbContext\\FlightsContext.cs",
-              "RelativeDocumentMoniker": "DbContext\\FlightsContext.cs",
-              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\DbContext\\FlightsContext.cs",
-              "RelativeToolTip": "DbContext\\FlightsContext.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAYwCMAAAAkAAAA",
+              "Title": "FlightDTO.cs",
+              "DocumentMoniker": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL\\FlightDTO.cs",
+              "RelativeDocumentMoniker": "BLL\\FlightDTO.cs",
+              "ToolTip": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL\\FlightDTO.cs",
+              "RelativeToolTip": "BLL\\FlightDTO.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T16:55:54.741Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T16:49:59.876Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BiletyLotnicze\\Program.cs",
-              "RelativeDocumentMoniker": "BiletyLotnicze\\Program.cs",
-              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BiletyLotnicze\\Program.cs",
-              "RelativeToolTip": "BiletyLotnicze\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T16:55:48.367Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Plane.cs",
-              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Plane.cs",
+              "DocumentMoniker": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\Models\\Plane.cs",
               "RelativeDocumentMoniker": "Models\\Plane.cs",
-              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Plane.cs",
+              "ToolTip": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\Models\\Plane.cs",
               "RelativeToolTip": "Models\\Plane.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T16:29:31.63Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T16:29:31.63Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 4,
               "Title": "Ticket.cs",
-              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Ticket.cs",
+              "DocumentMoniker": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\Models\\Ticket.cs",
               "RelativeDocumentMoniker": "Models\\Ticket.cs",
-              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Ticket.cs",
+              "ToolTip": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\Models\\Ticket.cs",
               "RelativeToolTip": "Models\\Ticket.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAA+wBgAAAAHAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAiwBoAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-09T16:35:28.919Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 3,
+              "Title": "FlightsContext.cs",
+              "DocumentMoniker": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\DbContext\\FlightsContext.cs",
+              "RelativeDocumentMoniker": "DbContext\\FlightsContext.cs",
+              "ToolTip": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\DbContext\\FlightsContext.cs",
+              "RelativeToolTip": "DbContext\\FlightsContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T16:55:54.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BiletyLotnicze\\Program.cs",
+              "RelativeDocumentMoniker": "BiletyLotnicze\\Program.cs",
+              "ToolTip": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BiletyLotnicze\\Program.cs",
+              "RelativeToolTip": "BiletyLotnicze\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T16:55:48.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Users.cs",
-              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Users.cs",
+              "DocumentMoniker": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\Models\\Users.cs",
               "RelativeDocumentMoniker": "Models\\Users.cs",
-              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Users.cs",
+              "ToolTip": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\Models\\Users.cs",
               "RelativeToolTip": "Models\\Users.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAAwCAAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T16:36:37.833Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-09T16:36:37.833Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "TicketService.cs",
-              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BLL_EF\\TicketService.cs",
-              "RelativeDocumentMoniker": "BLL_EF\\TicketService.cs",
-              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BLL_EF\\TicketService.cs",
-              "RelativeToolTip": "BLL_EF\\TicketService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAyAAAA",
+              "DocumentIndex": 8,
+              "Title": "Airport.cs",
+              "DocumentMoniker": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\Models\\Airport.cs",
+              "RelativeDocumentMoniker": "Models\\Airport.cs",
+              "ToolTip": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\Models\\Airport.cs",
+              "RelativeToolTip": "Models\\Airport.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAuwB8AAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T17:08:25.985Z"
+              "WhenOpened": "2024-04-09T16:24:33.99Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "FlightService.cs",
-              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BLL_EF\\FlightService.cs",
+              "DocumentMoniker": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL_EF\\FlightService.cs",
               "RelativeDocumentMoniker": "BLL_EF\\FlightService.cs",
-              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BLL_EF\\FlightService.cs",
+              "ToolTip": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL_EF\\FlightService.cs",
               "RelativeToolTip": "BLL_EF\\FlightService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T17:04:52.927Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-02T17:04:52.927Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 13,
               "Title": "AirportService.cs",
-              "DocumentMoniker": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BLL_EF\\AirportService.cs",
+              "DocumentMoniker": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL_EF\\AirportService.cs",
               "RelativeDocumentMoniker": "BLL_EF\\AirportService.cs",
-              "ToolTip": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\BLL_EF\\AirportService.cs",
+              "ToolTip": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL_EF\\AirportService.cs",
               "RelativeToolTip": "BLL_EF\\AirportService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-02T17:04:46.334Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 216,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IFlightService.cs",
+              "DocumentMoniker": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL\\IFlightService.cs",
+              "RelativeDocumentMoniker": "BLL\\IFlightService.cs",
+              "ToolTip": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL\\IFlightService.cs",
+              "RelativeToolTip": "BLL\\IFlightService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAACuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T17:22:27.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TicketDTO.cs",
+              "DocumentMoniker": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL\\TicketDTO.cs",
+              "RelativeDocumentMoniker": "BLL\\TicketDTO.cs",
+              "ToolTip": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL\\TicketDTO.cs",
+              "RelativeToolTip": "BLL\\TicketDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T17:16:29.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ITicketService.cs",
+              "DocumentMoniker": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL\\ITicketService.cs",
+              "RelativeDocumentMoniker": "BLL\\ITicketService.cs",
+              "ToolTip": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL\\ITicketService.cs",
+              "RelativeToolTip": "BLL\\ITicketService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-09T17:30:03.963Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -38,3 +38,12 @@ E:\Studia\TAIB\Projekt-TAIB\Project\BLL_EF\obj\Debug\net8.0\refint\BLL_EF.dll
 E:\Studia\TAIB\Projekt-TAIB\Project\BLL_EF\obj\Debug\net8.0\BLL_EF.pdb
 E:\Studia\TAIB\Projekt-TAIB\Project\BLL_EF\obj\Debug\net8.0\BLL_EF.genruntimeconfig.cache
 E:\Studia\TAIB\Projekt-TAIB\Project\BLL_EF\obj\Debug\net8.0\ref\BLL_EF.dll
+D:\KOLOS REPO\Projekt-TAIB\Project\BLL_EF\obj\Debug\net8.0\BLL_EF.csproj.AssemblyReference.cache
+D:\KOLOS REPO\Projekt-TAIB\Project\BLL_EF\obj\Debug\net8.0\BLL_EF.GeneratedMSBuildEditorConfig.editorconfig
+D:\KOLOS REPO\Projekt-TAIB\Project\BLL_EF\obj\Debug\net8.0\BLL_EF.AssemblyInfoInputs.cache
+D:\KOLOS REPO\Projekt-TAIB\Project\BLL_EF\obj\Debug\net8.0\BLL_EF.AssemblyInfo.cs
+D:\KOLOS REPO\Projekt-TAIB\Project\BLL_EF\obj\Debug\net8.0\BLL_EF.csproj.CoreCompileInputs.cache
+D:\KOLOS REPO\Projekt-TAIB\Project\BLL_EF\obj\Debug\net8.0\BLL_EF.sourcelink.json
+D:\KOLOS REPO\Projekt-TAIB\Project\BLL_EF\obj\Debug\net8.0\BLL_EF.dll
+D:\KOLOS REPO\Projekt-TAIB\Project\BLL_EF\obj\Debug\net8.0\refint\BLL_EF.dll
+D:\KOLOS REPO\Projekt-TAIB\Project\BLL_EF\obj\Debug\net8.0\BLL_EF.pdb
