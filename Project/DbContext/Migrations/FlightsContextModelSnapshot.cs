@@ -48,7 +48,7 @@ namespace DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Airline");
+                    b.ToTable("Airline", (string)null);
                 });
 
             modelBuilder.Entity("Models.Airport", b =>
@@ -85,7 +85,7 @@ namespace DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Airport");
+                    b.ToTable("Airport", (string)null);
                 });
 
             modelBuilder.Entity("Models.Flight", b =>
@@ -136,7 +136,7 @@ namespace DAL.Migrations
                     b.HasIndex("PlaneId")
                         .IsUnique();
 
-                    b.ToTable("Flight");
+                    b.ToTable("Flight", (string)null);
                 });
 
             modelBuilder.Entity("Models.Plane", b =>
@@ -169,7 +169,7 @@ namespace DAL.Migrations
 
                     b.HasIndex("AirlinesId");
 
-                    b.ToTable("Plane");
+                    b.ToTable("Plane", (string)null);
                 });
 
             modelBuilder.Entity("Models.Ticket", b =>
@@ -206,7 +206,7 @@ namespace DAL.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Ticket");
+                    b.ToTable("Ticket", (string)null);
                 });
 
             modelBuilder.Entity("Models.Users", b =>
@@ -248,7 +248,7 @@ namespace DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("User");
+                    b.ToTable("User", (string)null);
                 });
 
             modelBuilder.Entity("Models.Flight", b =>
