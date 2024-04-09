@@ -23,10 +23,11 @@ namespace Models
         public int SeatCount {  get; set; }
         [Required]
         public bool HasPrivateCabins { get; set; }
-
-        
-        
+        public int FlightId { get; set; }
+        [ForeignKey(nameof(FlightId))]
         public Flight Flights { get; set; }
+        public int AirlineId { get; set; }
+        [ForeignKey(nameof(AirlineId))]
         public Airline Airlines { get; set; }
 
         

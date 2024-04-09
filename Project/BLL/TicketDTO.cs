@@ -17,6 +17,6 @@ namespace BLL
         public Class Class { get; init; }
         public int UserId { get; init; }
         public int FlightId { get; init; }
-        public IEnumerable<AirlineDTO> Airlines { get; init; }
+        public int AirlineId { get; init; }
     }
 }

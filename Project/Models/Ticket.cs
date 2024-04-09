@@ -24,9 +24,14 @@ namespace Models
         public string Seat { get; set; }
         [Required]
         public Class Class { get; set; }
-        
+        public int UserId {  get; set; }
+        [ForeignKey(nameof(UserId))]
         public Users User { get; set; }
+        public int FlightId {  get; set; }
+        [ForeignKey(nameof (FlightId))]
         public Flight Flight { get; set; }
+        public int AirlineId { get; set; }
+        [ForeignKey(nameof (AirlineId))]
         public Airline Airlines { get; set; }
 
         public void Configure(EntityTypeBuilder<Ticket> builder)
