@@ -421,3 +421,7 @@ D:\KOLOS REPO\Projekt-TAIB\Project\BiletyLotnicze\obj\Debug\net8.0\refint\Bilety
 D:\KOLOS REPO\Projekt-TAIB\Project\BiletyLotnicze\obj\Debug\net8.0\BiletyLotnicze.pdb
 D:\KOLOS REPO\Projekt-TAIB\Project\BiletyLotnicze\obj\Debug\net8.0\BiletyLotnicze.genruntimeconfig.cache
 D:\KOLOS REPO\Projekt-TAIB\Project\BiletyLotnicze\obj\Debug\net8.0\ref\BiletyLotnicze.dll
+D:\KOLOS REPO\Projekt-TAIB\Project\BiletyLotnicze\bin\Debug\net8.0\BLL.dll
+D:\KOLOS REPO\Projekt-TAIB\Project\BiletyLotnicze\bin\Debug\net8.0\BLL_EF.dll
+D:\KOLOS REPO\Projekt-TAIB\Project\BiletyLotnicze\bin\Debug\net8.0\BLL.pdb
+D:\KOLOS REPO\Projekt-TAIB\Project\BiletyLotnicze\bin\Debug\net8.0\BLL_EF.pdb

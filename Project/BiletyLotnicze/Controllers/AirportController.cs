@@ -6,21 +6,31 @@ namespace BiletyLotnicze.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AirportController : ControllerBase
+    public class AirportController : Controller
     {
         readonly AirportService _airportService;
-        public AirportController(AirportService flightService)
+        public AirportController(AirportService airportService)
         {
-            _airportService = flightService;
+            _airportService = airportService;
         }
-        
+
         [HttpGet]
-        public IEnumerable<AirportDTO> Get() 
+        public Task<IEnumerable<AirportDTO>> GetAllAirports()
         {
-           // return this._airportService  
+            return this._airportService.GetAllAirports();
         }
 
+/*        [HttpPost]
+        public Task AddAirport()
+        {
+            return Task.CompletedTask;
+        }
 
+        [HttpPut]
+        public Task ModifyAirport() { return Task.CompletedTask; }
 
+        [HttpDelete]
+        public Task RemoveAirport() { return Task.CompletedTask; }
+*/
     }
 }
