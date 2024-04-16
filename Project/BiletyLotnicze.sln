@@ -4,20 +4,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BiletyLotnicze", "BiletyLotnicze\BiletyLotnicze.csproj", "{A9B69C27-672C-4FC1-98DF-1CFE9B8209E9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{63E6FB86-05B0-44B9-8F09-C88960017AF8} = {63E6FB86-05B0-44B9-8F09-C88960017AF8}
+		{E12E8301-3876-4014-952F-D4129BDF23C9} = {E12E8301-3876-4014-952F-D4129BDF23C9}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csproj", "{E6524F54-78D7-42EE-B228-162F0A973D05}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "DbContext\DAL.csproj", "{1B1143AC-BDE3-4BE6-A7BF-378B17563842}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BLL", "BLL\BLL.csproj", "{63E6FB86-05B0-44B9-8F09-C88960017AF8}"
-<<<<<<< Updated upstream
 	ProjectSection(ProjectDependencies) = postProject
 		{E6524F54-78D7-42EE-B228-162F0A973D05} = {E6524F54-78D7-42EE-B228-162F0A973D05}
 	EndProjectSection
-=======
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL_EF", "BLL_EF\BLL_EF.csproj", "{E12E8301-3876-4014-952F-D4129BDF23C9}"
->>>>>>> Stashed changes
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BLL_EF", "BLL_EF\BLL_EF.csproj", "{E12E8301-3876-4014-952F-D4129BDF23C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

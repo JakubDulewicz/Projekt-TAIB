@@ -82,7 +82,7 @@ namespace BLL_EF
         }
         public Task MovePlaneToDestination(FlightDTO flight, PlaneDTO plane, AirportDTO airport)
         {
-            
+            throw new NotImplementedException();
         }
 
 
