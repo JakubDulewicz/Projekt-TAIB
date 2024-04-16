@@ -47,3 +47,14 @@ D:\KOLOS REPO\Projekt-TAIB\Project\BLL_EF\obj\Debug\net8.0\BLL_EF.sourcelink.jso
 D:\KOLOS REPO\Projekt-TAIB\Project\BLL_EF\obj\Debug\net8.0\BLL_EF.dll
 D:\KOLOS REPO\Projekt-TAIB\Project\BLL_EF\obj\Debug\net8.0\refint\BLL_EF.dll
 D:\KOLOS REPO\Projekt-TAIB\Project\BLL_EF\obj\Debug\net8.0\BLL_EF.pdb
+D:\KOLOS REPO\Projekt-TAIB\Project\BLL_EF\bin\Debug\net8.0\BLL_EF.deps.json
+D:\KOLOS REPO\Projekt-TAIB\Project\BLL_EF\bin\Debug\net8.0\BLL_EF.runtimeconfig.json
+D:\KOLOS REPO\Projekt-TAIB\Project\BLL_EF\bin\Debug\net8.0\BLL_EF.dll
+D:\KOLOS REPO\Projekt-TAIB\Project\BLL_EF\bin\Debug\net8.0\BLL_EF.pdb
+D:\KOLOS REPO\Projekt-TAIB\Project\BLL_EF\bin\Debug\net8.0\BLL.dll
+D:\KOLOS REPO\Projekt-TAIB\Project\BLL_EF\bin\Debug\net8.0\Models.dll
+D:\KOLOS REPO\Projekt-TAIB\Project\BLL_EF\bin\Debug\net8.0\BLL.pdb
+D:\KOLOS REPO\Projekt-TAIB\Project\BLL_EF\bin\Debug\net8.0\Models.pdb
+D:\KOLOS REPO\Projekt-TAIB\Project\BLL_EF\obj\Debug\net8.0\BLL_EF.csproj.Up2Date
+D:\KOLOS REPO\Projekt-TAIB\Project\BLL_EF\obj\Debug\net8.0\BLL_EF.genruntimeconfig.cache
+D:\KOLOS REPO\Projekt-TAIB\Project\BLL_EF\obj\Debug\net8.0\ref\BLL_EF.dll

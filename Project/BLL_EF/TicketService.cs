@@ -41,7 +41,7 @@ namespace BLL_EF
         }
         private int GenerateUniqueId()
         {
-            return new Random().Next(1, 100000);
+           return new Random().Next(1, 100000);
         }
 
         public Task DeleteTicket(TicketDTO ticketId)
@@ -74,7 +74,7 @@ namespace BLL_EF
             }
             else
             {
-                throw new InvalidOperationException("Ticket not fount");
+                throw new InvalidOperationException("Ticket not found");
             }
             return Task.CompletedTask;
         }

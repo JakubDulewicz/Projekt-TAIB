@@ -14,7 +14,7 @@ namespace BLL
         public string Country { get; init; }
         public string City { get; init; }
         public string Address { get; init; }
-        public IEnumerable<PlaneDTO> Planes { get; init; }
+        public ICollection<PlaneDTO> Planes { get; set; }
 
         public FlightDTO? FlightTo { get; init; }
         public FlightDTO? FlightFrom { get; init; }
