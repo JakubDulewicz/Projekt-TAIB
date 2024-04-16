@@ -4,8 +4,8 @@ using BLL;
 
 namespace BiletyLotnicze.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("[controller]")]
     public class AirportController : Controller
     {
         readonly AirportService _airportService;
@@ -15,9 +15,22 @@ namespace BiletyLotnicze.Controllers
         }
 
         [HttpGet]
-        public Task<IEnumerable<AirportDTO>> GetAllAirports()
+        public async Task<IActionResult> Get()
         {
-            return this._airportService.GetAllAirports();
+            try
+            {
+                var airports = await _airportService.GetAllAirports();
+                if (airports == null)
+                {
+                    return NotFound("Airports not found");
+                }
+                return Ok(airports);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Bad Request {ex.Message} ");
+            }
+
         }
 
 /*        [HttpPost]

@@ -18,7 +18,7 @@ namespace Models
         [Required,MaxLength(50)]
         public string Name { get; set; }
         [Required]
-        public int IATA_CODE { get; set; }
+        public string IATA_CODE { get; set; }
         [Required,MaxLength(50)]
         public string Country {  get; set; }
         [Required,MaxLength(50)]

@@ -10,7 +10,10 @@ namespace BLL_EF
 {
     public class AirportService : IAirportService
     {
-        public List<AirportDTO> _airports { get; set; }
+        public List<AirportDTO> _airports;
+
+
+
         Task IAirportService.AddAirport(int airportId, string name, string IATA, string country, string city, string address)
         {
             var airport = new AirportDTO()
@@ -48,8 +51,7 @@ namespace BLL_EF
         public Task<IEnumerable<AirportDTO>> GetAllAirports()
         {
             IEnumerable<AirportDTO> Airports = _airports;
-
-            return Task.FromResult(Airports);
+             return Task.FromResult(Airports);
         }
 
         public Task AssignPlaneToAirport(int airportId, PlaneDTO plane)
