@@ -69,19 +69,22 @@ namespace BLL_EF
             });
         }
 
-        public async Task AssignPlaneToAirport(int airportId, PlaneDTO plane)
+        public async Task AssignPlaneToAirport(int airportId, int planeId)
         {
-            var airport = await _flightsContext.Airport.FindAsync(airportId);
-            if (airport != null)
+            var assignedAirport = await _flightsContext.Airport.FindAsync(airportId);
+            if (assignedAirport != null)
             {
-                if (airport.Planes == null)
+                var assingnedPlane = await _flightsContext.Plane.FindAsync(planeId);
+                if (assingnedPlane != null)
                 {
-                    var assignedPlane = new Models.Airport()
-                    {
-                        Planes = airport.Planes,
-                    };
+                    assignedAirport.Planes.ToList().Add(assingnedPlane);
+
+                    await _flightsContext.SaveChangesAsync();
                 }
-                await _flightsContext.SaveChangesAsync();
+                else
+                {
+                    throw new ArgumentException($"Plane with ID {planeId} not found or doesn't exist");
+                }
             }
             else
             {

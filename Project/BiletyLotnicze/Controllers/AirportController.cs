@@ -13,10 +13,7 @@ namespace BiletyLotnicze.Controllers
     {
         readonly FlightsContext _flightsContext;
         readonly AirportService _airportService;
-/*        public AirportController(FlightsContext dbContext)
-        {
-            _flightsContext = dbContext;
-        }*/
+
 
         public AirportController(AirportService airportService)
         {
@@ -48,6 +45,20 @@ namespace BiletyLotnicze.Controllers
             try
             {
                 await _airportService.AddAirport(Name, IATA_CODE, Country, City, Address);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPost("{id}/planes")]
+        public async Task<IActionResult> AssignPlane(int airportid, int planeid)
+        {
+            try
+            {
+                await _airportService.AssignPlaneToAirport(airportid, planeid);
                 return Ok();
             }
             catch (Exception ex)

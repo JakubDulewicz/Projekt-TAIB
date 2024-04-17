@@ -18,6 +18,7 @@ namespace Models
     }
     public class Ticket : IEntityTypeConfiguration<Ticket>
     {
+        [Key]
         [Required,Column("ID")]
         public int Id { get; set; }
         [Required,MaxLength(10)]

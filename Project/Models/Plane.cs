@@ -13,6 +13,7 @@ namespace Models
 {
     public class Plane : IEntityTypeConfiguration<Plane>
     {
+        [Key]
         [Required,Column("ID")]
         public int Id { get; set; }
         [Required,MaxLength(50)]
@@ -23,7 +24,7 @@ namespace Models
         public int SeatCount {  get; set; }
         [Required]
         public bool HasPrivateCabins { get; set; }
-        public Flight Flights { get; set; }
+        public Flight? Flights { get; set; }
         public Airline Airlines { get; set; }
 
         

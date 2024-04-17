@@ -381,8 +381,7 @@ namespace DAL.Migrations
 
             modelBuilder.Entity("Models.Plane", b =>
                 {
-                    b.Navigation("Flights")
-                        .IsRequired();
+                    b.Navigation("Flights");
                 });
 
             modelBuilder.Entity("Models.Users", b =>
