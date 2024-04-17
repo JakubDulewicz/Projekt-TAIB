@@ -13,6 +13,7 @@ namespace BLL_EF
     public class FlightService : IFlightService
     {
         readonly FlightsContext _flightsContext;
+        readonly IAirportService _airportService;
 
         public FlightService(FlightsContext context)
         {
@@ -69,18 +70,21 @@ namespace BLL_EF
                 Departure = f.Departure,
                 Arrival = f.Arrival,
                 Status = f.Status,
-                AirportToId = (int)f.AirportIdTo,
-                AirportFromId = (int)f.AirportIdFrom,
-                PlaneId = (int)f.Plane.PlaneId
+                AirportToId = f.AirportIdTo ?? 0,
+                AirportFromId = f.AirportIdFrom ?? 0,
+                PlaneId = f.PlaneId ?? 0
+                //AirportToId = f.AirportIdTo,
+                //AirportFromId = (int)f.AirportIdFrom,
+                //PlaneId = (int)f.Plane.PlaneId
             });    
         }
 
         public async Task MovePlaneToDestination(int flightId, int planeId, int airportId)
         {
-            var flight = await _flightsContext.Flights.FindAsync(flightId);
+            var flight = await _flightsContext.Flight.FindAsync(flightId);
             if (flight != null)
             {
-                flight.Plane = await _flightsContext.Planes.FindAsync(planeId);
+                flight.Plane = await _flightsContext.Plane.FindAsync(planeId);
                 flight.AirportIdTo = airportId;
                 await _flightsContext.SaveChangesAsync();
             }
@@ -88,7 +92,7 @@ namespace BLL_EF
 
         public async Task SetStatus(int flightId, Status newStatus)
         {
-            var flight = await _flightsContext.Flights.FindAsync(flightId);
+            var flight = await _flightsContext.Flight.FindAsync(flightId);
             if (flight != null)
             {
                 flight.Status = newStatus;

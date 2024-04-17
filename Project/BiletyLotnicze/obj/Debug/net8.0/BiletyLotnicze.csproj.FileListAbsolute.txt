@@ -570,3 +570,7 @@ D:\DevHomeRepos\Projekt-TAIB\Project\BiletyLotnicze\obj\Debug\net8.0\refint\Bile
 D:\DevHomeRepos\Projekt-TAIB\Project\BiletyLotnicze\obj\Debug\net8.0\BiletyLotnicze.pdb
 D:\DevHomeRepos\Projekt-TAIB\Project\BiletyLotnicze\obj\Debug\net8.0\BiletyLotnicze.genruntimeconfig.cache
 D:\DevHomeRepos\Projekt-TAIB\Project\BiletyLotnicze\obj\Debug\net8.0\ref\BiletyLotnicze.dll
+E:\Studia\TAIB\Projekt-TAIB\Project\BiletyLotnicze\bin\Debug\net8.0\BLL.dll
+E:\Studia\TAIB\Projekt-TAIB\Project\BiletyLotnicze\bin\Debug\net8.0\BLL_EF.dll
+E:\Studia\TAIB\Projekt-TAIB\Project\BiletyLotnicze\bin\Debug\net8.0\BLL.pdb
+E:\Studia\TAIB\Projekt-TAIB\Project\BiletyLotnicze\bin\Debug\net8.0\BLL_EF.pdb

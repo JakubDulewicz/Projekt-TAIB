@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# CS8629: Typ wartości dopuszczający wartość null może być równy null.
+dotnet_diagnostic.CS8629.severity = none

@@ -4127,23 +4127,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lukus\\.nuget\\packages\\": {},
+    "C:\\Users\\jdulewicz\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\DbContext\\DAL.csproj",
+      "projectUniqueName": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\DbContext\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\DbContext\\DAL.csproj",
-      "packagesPath": "C:\\Users\\lukus\\.nuget\\packages\\",
-      "outputPath": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\DbContext\\obj\\",
+      "projectPath": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\DbContext\\DAL.csproj",
+      "packagesPath": "C:\\Users\\jdulewicz\\.nuget\\packages\\",
+      "outputPath": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\DbContext\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\lukus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jdulewicz\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4152,14 +4152,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\Models\\Models.csproj": {
-              "projectPath": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\Models\\Models.csproj"
+            "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Models.csproj": {
+              "projectPath": "E:\\Studia\\TAIB\\Projekt-TAIB\\Project\\Models\\Models.csproj"
             }
           }
         }

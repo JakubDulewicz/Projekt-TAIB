@@ -80,3 +80,5 @@ D:\DevHomeRepos\Projekt-TAIB\Project\BLL_EF\obj\Debug\net8.0\BLL_EF.genruntimeco
 D:\DevHomeRepos\Projekt-TAIB\Project\BLL_EF\obj\Debug\net8.0\ref\BLL_EF.dll
 D:\KOLOS REPO\Projekt-TAIB\Project\BLL_EF\bin\Debug\net8.0\DAL.dll
 D:\KOLOS REPO\Projekt-TAIB\Project\BLL_EF\bin\Debug\net8.0\DAL.pdb
+E:\Studia\TAIB\Projekt-TAIB\Project\BLL_EF\bin\Debug\net8.0\DAL.dll
+E:\Studia\TAIB\Projekt-TAIB\Project\BLL_EF\bin\Debug\net8.0\DAL.pdb

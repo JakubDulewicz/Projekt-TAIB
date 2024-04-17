@@ -128,7 +128,8 @@ namespace DAL.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<int>("PlaneId")
+                    b.Property<int?>("PlaneId")
+                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<int>("Status")

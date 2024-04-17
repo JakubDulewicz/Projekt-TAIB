@@ -45,6 +45,9 @@ namespace Models
         [Required]
         public int? AirportIdFrom { get; set; }
 
+        [Required]
+        public int? PlaneId { get; set; }
+
         public Airport AirportFrom { get; set; }
         public Airport AirportTo { get; set; }
         public Plane Plane { get; set; }
