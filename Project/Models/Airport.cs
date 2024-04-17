@@ -25,7 +25,10 @@ namespace Models
         public string City { get; set; }
         [Required,MaxLength(50)]
         public string Address { get; set; }
-       
+        
+        public int? PlaneId { get; set; }
+        [ForeignKey(nameof(PlaneId))]
+        public IEnumerable<Plane>? Planes { get; set; }
         [Required]
         public Flight FlightTo { get; set; }
         [Required]

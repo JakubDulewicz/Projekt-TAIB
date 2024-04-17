@@ -48,7 +48,8 @@ namespace Models
         public Airport AirportTo { get; set; }
         [Required,ForeignKey(nameof(PlaneId))]
         public Plane Plane { get; set; }
-        [Required]
+        public int TicketId { get; set; }
+        [Required, ForeignKey(nameof(TicketId))]
         public IEnumerable<Ticket> Tickets { get; set; }
 
         public void Configure(EntityTypeBuilder<Flight> builder)

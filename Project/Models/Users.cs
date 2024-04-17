@@ -30,6 +30,8 @@ namespace Models
         [Required]
         public Roles Roles { get; set; }
         [Required]
+        public int TicketId { get; set; }
+        [ForeignKey(nameof(TicketId))]
         public IEnumerable<Ticket> Tickets { get; set; }
 
         public void Configure(EntityTypeBuilder<Users> builder)

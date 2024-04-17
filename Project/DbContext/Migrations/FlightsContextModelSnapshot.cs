@@ -46,6 +46,12 @@ namespace DAL.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<int>("PlaneId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TicketId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.ToTable("Airline");
@@ -83,6 +89,9 @@ namespace DAL.Migrations
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
+
+                    b.Property<int?>("PlaneId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
@@ -129,6 +138,9 @@ namespace DAL.Migrations
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
+                    b.Property<int>("TicketId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("AirportIdFrom")
@@ -152,9 +164,6 @@ namespace DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("AirlinesId")
-                        .HasColumnType("int");
-
                     b.Property<bool>("HasPrivateCabins")
                         .HasColumnType("bit");
 
@@ -162,6 +171,9 @@ namespace DAL.Migrations
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
+
+                    b.Property<int>("PlaneId")
+                        .HasColumnType("int");
 
                     b.Property<int>("SeatCount")
                         .HasColumnType("int");
@@ -171,7 +183,7 @@ namespace DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AirlinesId");
+                    b.HasIndex("PlaneId");
 
                     b.ToTable("Plane");
                 });
@@ -202,7 +214,7 @@ namespace DAL.Migrations
                         .HasMaxLength(10)
                         .HasColumnType("nvarchar(10)");
 
-                    b.Property<int>("UserId")
+                    b.Property<int>("TicketId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -211,7 +223,7 @@ namespace DAL.Migrations
 
                     b.HasIndex("FlightId");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("TicketId");
 
                     b.ToTable("Ticket");
                 });
@@ -253,6 +265,9 @@ namespace DAL.Migrations
                     b.Property<int>("Roles")
                         .HasColumnType("int");
 
+                    b.Property<int>("TicketId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.ToTable("User");
@@ -289,7 +304,13 @@ namespace DAL.Migrations
                 {
                     b.HasOne("Models.Airline", "Airlines")
                         .WithMany("Planes")
-                        .HasForeignKey("AirlinesId")
+                        .HasForeignKey("PlaneId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Models.Airport", null)
+                        .WithMany("Planes")
+                        .HasForeignKey("PlaneId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
@@ -299,20 +320,32 @@ namespace DAL.Migrations
             modelBuilder.Entity("Models.Ticket", b =>
                 {
                     b.HasOne("Models.Airline", "Airlines")
-                        .WithMany("Tickets")
+                        .WithMany()
                         .HasForeignKey("AirlineId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("Models.Flight", "Flight")
-                        .WithMany("Tickets")
+                        .WithMany()
                         .HasForeignKey("FlightId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Models.Airline", null)
+                        .WithMany("Tickets")
+                        .HasForeignKey("TicketId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Models.Flight", null)
+                        .WithMany("Tickets")
+                        .HasForeignKey("TicketId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("Models.Users", "User")
                         .WithMany("Tickets")
-                        .HasForeignKey("UserId")
+                        .HasForeignKey("TicketId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
@@ -337,6 +370,8 @@ namespace DAL.Migrations
 
                     b.Navigation("FlightTo")
                         .IsRequired();
+
+                    b.Navigation("Planes");
                 });
 
             modelBuilder.Entity("Models.Flight", b =>

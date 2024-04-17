@@ -20,9 +20,11 @@ namespace Models
         public string Country { get; set; }
         [Required,MaxLength (50)]
         public string Logo { get; set; }
-        [Required]
+        public int PlaneId { get; set; }
+        [Required, ForeignKey(nameof(PlaneId))]
         public IEnumerable<Plane> Planes { get; set; }
-        [Required]
+        public int TicketId { get; set; }
+        [Required, ForeignKey(nameof(TicketId))]
         public IEnumerable<Ticket> Tickets { get; set; }
 
         public void Configure(EntityTypeBuilder<Airline> builder)
