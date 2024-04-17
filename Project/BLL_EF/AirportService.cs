@@ -48,10 +48,10 @@ namespace BLL_EF
             return Task.CompletedTask;
         }
 
-        public Task<IEnumerable<AirportDTO>> GetAllAirports()
+        public IEnumerable<AirportDTO> GetAllAirports()
         {
             IEnumerable<AirportDTO> Airports = _airports;
-             return Task.FromResult(Airports);
+             return Airports;
         }
 
         public Task AssignPlaneToAirport(int airportId, PlaneDTO plane)

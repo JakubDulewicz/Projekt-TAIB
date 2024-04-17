@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dOQoWtiPzHGjPY1QHD0yGn7ax3Q3dCremPHFLxelGkWZ48/MHHdMo/b/n4gsKYNEr38YY/avNVnonnVE+Izd3Q==",
+  "dgSpecHash": "l5GMlfDeDfSSJ3AVPsz0a5QYHlM8W83h6fOApwy6+2mT0CU51avUG4fl7ju52+oO/0jxwKZeZWW8NWnIr84Lkg==",
   "success": true,
-  "projectFilePath": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BiletyLotnicze\\BiletyLotnicze.csproj",
+  "projectFilePath": "D:\\DevHomeRepos\\Projekt-TAIB\\Project\\BiletyLotnicze\\BiletyLotnicze.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lukus\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\lukus\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

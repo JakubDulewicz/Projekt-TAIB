@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using BLL_EF;
 using BLL;
+using DAL;
+using System.Linq;
 
 namespace BiletyLotnicze.Controllers
 {
@@ -8,7 +10,13 @@ namespace BiletyLotnicze.Controllers
     [Route("[controller]")]
     public class AirportController : Controller
     {
+        readonly FlightsContext _flightsContext;
         readonly AirportService _airportService;
+/*        public AirportController(FlightsContext dbContext)
+        {
+            _flightsContext = dbContext;
+        }*/
+
         public AirportController(AirportService airportService)
         {
             _airportService = airportService;
@@ -19,7 +27,7 @@ namespace BiletyLotnicze.Controllers
         {
             try
             {
-                var airports = await _airportService.GetAllAirports();
+                var airports = _airportService.GetAllAirports();
                 if (airports == null)
                 {
                     return NotFound("Airports not found");
