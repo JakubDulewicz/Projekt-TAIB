@@ -60,7 +60,7 @@ namespace BLL_EF
             var airports = await _flightsContext.Airport.ToListAsync();
             return airports.Select(airport => new AirportDTO
             {
-                Id = airport.Id,
+                Id = airport.AirportId,
                 Name = airport.Name,
                 IATA_CODE = airport.IATA_CODE,
                 Country = airport.Country,
@@ -71,14 +71,22 @@ namespace BLL_EF
 
         public async Task AssignPlaneToAirport(int airportId, int planeId)
         {
-            var assignedAirport = await _flightsContext.Airport.FindAsync(airportId);
+            var assignedAirport = await _flightsContext.Airport.Include(a => a.Planes).FirstOrDefaultAsync(a => a.AirportId == airportId);
             if (assignedAirport != null)
             {
-                var assingnedPlane = await _flightsContext.Plane.FindAsync(planeId);
-                if (assingnedPlane != null)
+                var assignedPlane = await _flightsContext.Plane.FindAsync(planeId);
+                if (assignedPlane != null)
                 {
-                    assignedAirport.Planes.ToList().Add(assingnedPlane);
+                    // Inicjalizacja kolekcji jeśli jest null
+                    if (assignedAirport.Planes == null)
+                    {
+                        assignedAirport.Planes = new List<Plane>();
+                    }
 
+                    // Dodaj samolot bezpośrednio do kolekcji
+                    assignedAirport.Planes.Add(assignedPlane);
+
+                    // Zapisz zmiany w kontekście
                     await _flightsContext.SaveChangesAsync();
                 }
                 else
@@ -90,7 +98,6 @@ namespace BLL_EF
             {
                 throw new ArgumentException($"Airport with ID {airportId} not found.");
             }
-        
         }
     }
 }

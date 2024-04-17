@@ -11,39 +11,33 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    public class Airport : IEntityTypeConfiguration<Airport> 
+    public class Airport : IEntityTypeConfiguration<Airport>
     {
-        [Required,Column("ID")]
-        public int Id { get; set; }
-        [Required,MaxLength(50)]
+        [Key]
+        public int AirportId { get; set; }
+
+        [Required, MaxLength(50)]
         public string Name { get; set; }
+
         [Required]
         public string IATA_CODE { get; set; }
-        [Required,MaxLength(50)]
-        public string Country {  get; set; }
-        [Required,MaxLength(50)]
+
+        [Required, MaxLength(50)]
+        public string Country { get; set; }
+
+        [Required, MaxLength(50)]
         public string City { get; set; }
-        [Required,MaxLength(50)]
+
+        [Required, MaxLength(50)]
         public string Address { get; set; }
-        
+
         public int? PlaneId { get; set; }
-        [ForeignKey(nameof(PlaneId))]
-        public IEnumerable<Plane>? Planes { get; set; }
-        [Required]
-        public Flight FlightTo { get; set; }
-        [Required]
-        public Flight FlightFrom { get; set; }
+        public ICollection<Plane> Planes { get; set; }
 
         public void Configure(EntityTypeBuilder<Airport> builder)
         {
-            //builder
-            //    .HasOne(x => x.FlightTo)
-            //    .WithOne(x => x.AirportTo)
-            //    .OnDelete(DeleteBehavior.Cascade);
-            //builder
-            //    .HasOne(x => x.FlightFrom)
-            //    .WithOne(x => x.AirportFrom)
-            //    .OnDelete(DeleteBehavior.Cascade);
+            // Konfiguracja relacji może być dodana później, w zależności od potrzeb
         }
     }
 }
+

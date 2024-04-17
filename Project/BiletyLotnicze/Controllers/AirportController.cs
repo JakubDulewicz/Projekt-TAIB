@@ -53,7 +53,7 @@ namespace BiletyLotnicze.Controllers
             }
         }
 
-        [HttpPost("{id}/planes")]
+        [HttpPost("/planes/assign/{airportid},{planeid}")]
         public async Task<IActionResult> AssignPlane(int airportid, int planeid)
         {
             try

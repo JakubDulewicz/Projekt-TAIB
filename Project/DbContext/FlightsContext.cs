@@ -29,7 +29,7 @@ namespace DAL
                 relationship.DeleteBehavior = DeleteBehavior.Restrict;
             }
 
-            modelBuilder.Entity<Flight>()
+          /*  modelBuilder.Entity<Flight>()
                 .HasOne(x => x.AirportFrom)
                 .WithOne(x => x.FlightFrom)
                 .HasForeignKey<Flight>(x => x.AirportIdFrom)
@@ -39,7 +39,7 @@ namespace DAL
                 .HasOne(x => x.AirportTo)
                 .WithOne(x => x.FlightTo)
                 .HasForeignKey<Flight>(x => x.AirportIdTo)
-                .OnDelete(DeleteBehavior.Restrict);
+                .OnDelete(DeleteBehavior.Restrict);*/
                 
         }
     }

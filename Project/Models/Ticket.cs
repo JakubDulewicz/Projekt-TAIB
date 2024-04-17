@@ -19,35 +19,36 @@ namespace Models
     public class Ticket : IEntityTypeConfiguration<Ticket>
     {
         [Key]
-        [Required,Column("ID")]
-        public int Id { get; set; }
-        [Required,MaxLength(10)]
+        public int TicketId { get; set; }
+
+        [Required, MaxLength(10)]
         public string Seat { get; set; }
+
         [Required]
         public Class Class { get; set; }
+
         [Required]
         public double Price { get; set; }
+
         public Users User { get; set; }
-        public int FlightId {  get; set; }
-        [ForeignKey(nameof (FlightId))]
         public Flight Flight { get; set; }
-        public int AirlineId { get; set; }
-        [ForeignKey(nameof (AirlineId))]
         public Airline Airlines { get; set; }
 
         public void Configure(EntityTypeBuilder<Ticket> builder)
         {
             builder
-                .HasOne(x => x.User)
-                .WithMany(x => x.Tickets)
+                .HasOne(t => t.User)
+                .WithMany(u => u.Tickets)
                 .OnDelete(DeleteBehavior.Restrict);
+
             builder
-                .HasOne(x => x.Flight)
-                .WithMany(x => x.Tickets)
+                .HasOne(t => t.Flight)
+                .WithMany(f => f.Tickets)
                 .OnDelete(DeleteBehavior.Restrict);
+
             builder
-                .HasOne(x => x.Airlines)
-                .WithMany(x => x.Tickets)
+                .HasOne(t => t.Airlines)
+                .WithMany(a => a.Tickets)
                 .OnDelete(DeleteBehavior.Restrict);
         }
     }

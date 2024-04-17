@@ -14,30 +14,26 @@ namespace Models
     public class Plane : IEntityTypeConfiguration<Plane>
     {
         [Key]
-        [Required,Column("ID")]
-        public int Id { get; set; }
-        [Required,MaxLength(50)]
+        public int PlaneId { get; set; }
+
+        [Required, MaxLength(50)]
         public string Model { get; set; }
+
         [Required]
         public DateOnly YearOfProduction { get; set; }
+
         [Required]
-        public int SeatCount {  get; set; }
+        public int SeatCount { get; set; }
+
         [Required]
         public bool HasPrivateCabins { get; set; }
-        public Flight? Flights { get; set; }
+
+        public ICollection<Flight> Flights { get; set; }
         public Airline Airlines { get; set; }
 
-        
         public void Configure(EntityTypeBuilder<Plane> builder)
         {
-            builder
-                .HasOne(x => x.Flights)
-                .WithOne(x => x.Plane)
-                .OnDelete(DeleteBehavior.Restrict);
-            builder
-                .HasOne(x => x.Airlines)
-                .WithMany(x => x.Planes)
-                .OnDelete(DeleteBehavior.Restrict);
+            // Konfiguracja relacji może być dodana później, w zależności od potrzeb
         }
     }
 }

@@ -12,31 +12,33 @@ namespace Models
 {
     public class Airline : IEntityTypeConfiguration<Airline>
     {
-        [Required,Column("ID")]
-        public int Id { get; set; }
-        [Required,MaxLength(50)]
+        [Key]
+        public int AirlineId { get; set; }
+
+        [Required, MaxLength(50)]
         public string Name { get; set; }
-        [Required,MaxLength (50)]
+
+        [Required, MaxLength(50)]
         public string Country { get; set; }
-        [Required,MaxLength (50)]
+
+        [Required, MaxLength(50)]
         public string Logo { get; set; }
-        public int PlaneId { get; set; }
-        [Required, ForeignKey(nameof(PlaneId))]
-        public IEnumerable<Plane> Planes { get; set; }
-        public int TicketId { get; set; }
-        [Required, ForeignKey(nameof(TicketId))]
-        public IEnumerable<Ticket> Tickets { get; set; }
+
+        public ICollection<Plane> Planes { get; set; }
+        public ICollection<Ticket> Tickets { get; set; }
 
         public void Configure(EntityTypeBuilder<Airline> builder)
         {
             builder
-                .HasMany(x => x.Tickets)
-                .WithOne(x => x.Airlines)
+                .HasMany(a => a.Tickets)
+                .WithOne(t => t.Airlines)
                 .OnDelete(DeleteBehavior.Restrict);
+
             builder
-                .HasMany(x => x.Planes)
-                .WithOne(x => x.Airlines)
+                .HasMany(a => a.Planes)
+                .WithOne(p => p.Airlines)
                 .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }
+
