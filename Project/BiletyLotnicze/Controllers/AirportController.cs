@@ -3,6 +3,7 @@ using BLL_EF;
 using BLL;
 using DAL;
 using System.Linq;
+using Microsoft.AspNetCore.DataProtection.KeyManagement.Internal;
 
 namespace BiletyLotnicze.Controllers
 {
@@ -22,7 +23,7 @@ namespace BiletyLotnicze.Controllers
             _airportService = airportService;
         }
 
-        [HttpGet]
+        [HttpGet("AllAirports")]
         public async Task<IActionResult> Get()
         {
             try
@@ -41,17 +42,34 @@ namespace BiletyLotnicze.Controllers
 
         }
 
-/*        [HttpPost]
-        public Task AddAirport()
+      [HttpPost("AddAirport/{Name},{IATA_CODE},{Country},{City},{Address}")]
+        public async Task<IActionResult> AddAirport(string Name, string IATA_CODE, string Country, string City, string Address)
         {
-            return Task.CompletedTask;
+            try
+            {
+                await _airportService.AddAirport(Name, IATA_CODE, Country, City, Address);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
-        [HttpPut]
-        public Task ModifyAirport() { return Task.CompletedTask; }
-
-        [HttpDelete]
-        public Task RemoveAirport() { return Task.CompletedTask; }
-*/
+        [HttpDelete("DeleteAirport/{id}")]
+        public async Task<IActionResult> DeleteAirport(int id)
+        {
+            try
+            {
+                await _airportService.RemoveAirport(id);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+       
+        
     }
 }

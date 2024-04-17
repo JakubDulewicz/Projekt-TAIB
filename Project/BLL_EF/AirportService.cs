@@ -21,11 +21,11 @@ namespace BLL_EF
 
 
 
-       public async Task AddAirport(int airportId, string name, string IATA, string country, string city, string address)
+       public async Task AddAirport(/*int airportId,*/ string name, string IATA, string country, string city, string address)
         {
             var airport = new Models.Airport()
             {
-                Id = airportId,
+                //Id = airportId,
                 Name = name,
                 IATA_CODE = IATA,
                 Country = country,
@@ -41,7 +41,7 @@ namespace BLL_EF
             return new Random().Next(1, 100000);
         }
 
-        public async Task RemoveAirport(AirportDTO airportId)
+        public async Task RemoveAirport(int airportId)
         {
             var deletedAirport = await _flightsContext.Airport.FindAsync(airportId);
             if (deletedAirport != null) 
@@ -74,12 +74,14 @@ namespace BLL_EF
             var airport = await _flightsContext.Airport.FindAsync(airportId);
             if (airport != null)
             {
-                /*if (airport.Planes == null)
+                if (airport.Planes == null)
                 {
-                    airport.Planes = new List<PlaneDTO>();
+                    var assignedPlane = new Models.Airport()
+                    {
+                        Planes = airport.Planes,
+                    };
                 }
-                airport.Planes.Add(plane);
-                await _flightsContext.SaveChangesAsync();*/
+                await _flightsContext.SaveChangesAsync();
             }
             else
             {
