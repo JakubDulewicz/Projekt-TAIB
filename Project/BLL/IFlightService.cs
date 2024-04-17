@@ -9,11 +9,11 @@ namespace BLL
 {
     public interface IFlightService
     {
-        Task CreateFlight(int flightId, string name, string destination, DateTime departure, DateTime arrival, Status status, AirportDTO airportToId, AirportDTO airprortFromId, PlaneDTO planeId);
-        Task DeleteFlight(FlightDTO flightId);
-        Task AssignPlanesAndAirports(int flightId, PlaneDTO plane, AirportDTO airportTo, AirportDTO airportFrom);
-        Task MovePlaneToDestination(FlightDTO flight, PlaneDTO plane, AirportDTO airport);
-        Task SetStatus(FlightDTO flight);
-        Task<IEnumerable<FlightDTO>> GetFlights(FlightDTO flightId);
+        Task CreateFlight(int flightId, string name, string destination, DateTime departure, DateTime arrival, Status status, int airportToId, int airprortFromId, int planeId);
+        Task DeleteFlight(int flightId);
+        Task AssignPlanesAndAirports(int flightId, int planeid, int airportToId, int airportFromId);
+        Task MovePlaneToDestination(int flightId, int planeId, int airportId);
+        Task SetStatus(int flightId, Status newStatus);
+        Task<IEnumerable<FlightDTO>> GetFlights();
     }
 }

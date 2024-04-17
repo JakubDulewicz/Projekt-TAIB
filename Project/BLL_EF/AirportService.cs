@@ -36,11 +36,6 @@ namespace BLL_EF
             await _flightsContext.SaveChangesAsync();
         }
 
-        private int GenerateUniqueId()
-        {
-            return new Random().Next(1, 100000);
-        }
-
         public async Task RemoveAirport(int airportId)
         {
             var deletedAirport = await _flightsContext.Airport.FindAsync(airportId);

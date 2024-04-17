@@ -4,87 +4,96 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BLL;
+using DAL;
+using Microsoft.EntityFrameworkCore;
 using Models;
 
 namespace BLL_EF
 {
     public class FlightService : IFlightService
     {
-        readonly IAirportService _airportService;
+        readonly FlightsContext _flightsContext;
 
-        public List<FlightDTO> _flights { get; set; }
-
-        Task IFlightService.CreateFlight(int flightId, string name, string destination, DateTime departure, DateTime arrival, Status status, AirportDTO airportToId, AirportDTO airprortFromId, PlaneDTO planeId)
+        public FlightService(FlightsContext context)
         {
-            var flight = new FlightDTO()
+            _flightsContext = context;
+        }
+
+        public async Task AssignPlanesAndAirports(int flightId, int planeId, int airportToId, int airportFromId)
+        {
+            var flight = await _flightsContext.Flight.FindAsync(flightId);
+            if (flight != null)
             {
-                Id = GenerateUniqueId(),
+                flight.Plane = await _flightsContext.Plane.FindAsync(planeId);
+                flight.AirportIdTo = airportToId;
+                flight.AirportIdFrom = airportFromId;
+                await _flightsContext.SaveChangesAsync();
+            }
+        }
+
+        public async Task CreateFlight(int flightId, string name, string destination, DateTime departure, DateTime arrival, Status status, int airportToId, int airportFromId, int planeId)
+        {
+            var flight = new Flight
+            {
+                FlightId = flightId,
                 Name = name,
                 Destination = destination,
                 Departure = departure,
                 Arrival = arrival,
                 Status = status
             };
-            _flights.Add(flight);
-            return Task.FromResult(AssignPlanesAndAirports(flightId, planeId, airportToId, airprortFromId));
+
+            _flightsContext.Flight.Add(flight);
+            await _flightsContext.SaveChangesAsync();
         }
 
-        private int GenerateUniqueId()
-        {
-            return new Random().Next(1, 100000);
-        }
 
-        public Task DeleteFlight(FlightDTO flightId)
+        public async Task DeleteFlight(int flightId)
         {
-            var deletedFlight = _flights.FirstOrDefault(flightId);
-            if(deletedFlight != null)
+            var flight = await _flightsContext.Flight.FindAsync(flightId);
+            if (flight != null)
             {
-                _flights.Remove(deletedFlight);
+                _flightsContext.Flight.Remove(flight);
+                await _flightsContext.SaveChangesAsync();
             }
-            else
-            {
-                throw new ArgumentException($"Unable to delete flight {flightId}");
-            }
-            return Task.CompletedTask;
         }
 
-        public Task<IEnumerable<FlightDTO>> GetFlights(FlightDTO flightId)
+        public async Task<IEnumerable<FlightDTO>> GetFlights()
         {
-            IEnumerable<FlightDTO> flights = _flights;
-            
-            return Task.FromResult(flights);
+            var flights = await _flightsContext.Flight.ToListAsync();
+            return flights.Select(f => new FlightDTO
+            {
+                Id = f.FlightId,
+                Name = f.Name,
+                Destination = f.Destination,
+                Departure = f.Departure,
+                Arrival = f.Arrival,
+                Status = f.Status,
+                AirportToId = (int)f.AirportIdTo,
+                AirportFromId = (int)f.AirportIdFrom,
+                PlaneId = (int)f.Plane.PlaneId
+            });    
         }
 
-        public Task AssignPlanesAndAirports(int flightId, PlaneDTO plane, AirportDTO airportTo, AirportDTO airportFrom)
+        public async Task MovePlaneToDestination(int flightId, int planeId, int airportId)
         {
-            var assign = _flights.FirstOrDefault(f => f.Id == flightId);
-            if(assign != null)
+            var flight = await _flightsContext.Flights.FindAsync(flightId);
+            if (flight != null)
             {
-                assign.AirportFromId = airportFrom.Id;
-                assign.AirportToId = airportTo.Id;
-                assign.PlaneId = plane.Id;
+                flight.Plane = await _flightsContext.Planes.FindAsync(planeId);
+                flight.AirportIdTo = airportId;
+                await _flightsContext.SaveChangesAsync();
             }
-            else
-            {
-                throw new ArgumentException($"Unable to assign plane {plane} with airport {airportFrom} and airport {airportTo}");
-            }
-            return Task.CompletedTask;
-        }
-        public Task SetStatus(FlightDTO flight)
-        {
-            var changeStatus = _flights.FirstOrDefault(f => f.Id == flight.Id);
-            if(changeStatus != null)
-            {
-                changeStatus.Status = flight.Status;
-            }
-            else { throw new ArgumentException($"couldn't change status {changeStatus.Status} to {flight.Status}"); }
-            return Task.CompletedTask;
-        }
-        public Task MovePlaneToDestination(FlightDTO flight, PlaneDTO plane, AirportDTO airport)
-        {
-            throw new NotImplementedException();
         }
 
-
+        public async Task SetStatus(int flightId, Status newStatus)
+        {
+            var flight = await _flightsContext.Flights.FindAsync(flightId);
+            if (flight != null)
+            {
+                flight.Status = newStatus;
+                await _flightsContext.SaveChangesAsync();
+            }
+        }
     }
 }
