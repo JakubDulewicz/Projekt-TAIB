@@ -921,7 +921,9 @@
       "BLL_EF/1.0.0": {
         "dependencies": {
           "BLL": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "8.0.3"
+          "DAL": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.3",
+          "Models": "1.0.0"
         },
         "runtime": {
           "BLL_EF.dll": {}

@@ -27,7 +27,7 @@ namespace BiletyLotnicze.Controllers
         {
             try
             {
-                var airports = _airportService.GetAllAirports();
+                var airports = await _airportService.GetAllAirports();
                 if (airports == null)
                 {
                     return NotFound("Airports not found");

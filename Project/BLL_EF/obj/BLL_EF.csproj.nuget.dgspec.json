@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DevHomeRepos\\Projekt-TAIB\\Project\\BLL_EF\\BLL_EF.csproj": {}
+    "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL_EF\\BLL_EF.csproj": {}
   },
   "projects": {
-    "D:\\DevHomeRepos\\Projekt-TAIB\\Project\\BLL\\BLL.csproj": {
+    "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DevHomeRepos\\Projekt-TAIB\\Project\\BLL\\BLL.csproj",
+        "projectUniqueName": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "D:\\DevHomeRepos\\Projekt-TAIB\\Project\\BLL\\BLL.csproj",
+        "projectPath": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL\\BLL.csproj",
         "packagesPath": "C:\\Users\\lukus\\.nuget\\packages\\",
-        "outputPath": "D:\\DevHomeRepos\\Projekt-TAIB\\Project\\BLL\\obj\\",
+        "outputPath": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,15 +26,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\DevHomeRepos\\Projekt-TAIB\\Project\\Models\\Models.csproj": {
-                "projectPath": "D:\\DevHomeRepos\\Projekt-TAIB\\Project\\Models\\Models.csproj"
+              "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\Models\\Models.csproj": {
+                "projectPath": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\Models\\Models.csproj"
               }
             }
           }
@@ -87,18 +86,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\DevHomeRepos\\Projekt-TAIB\\Project\\BLL_EF\\BLL_EF.csproj": {
+    "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL_EF\\BLL_EF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DevHomeRepos\\Projekt-TAIB\\Project\\BLL_EF\\BLL_EF.csproj",
+        "projectUniqueName": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL_EF\\BLL_EF.csproj",
         "projectName": "BLL_EF",
-        "projectPath": "D:\\DevHomeRepos\\Projekt-TAIB\\Project\\BLL_EF\\BLL_EF.csproj",
+        "projectPath": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL_EF\\BLL_EF.csproj",
         "packagesPath": "C:\\Users\\lukus\\.nuget\\packages\\",
-        "outputPath": "D:\\DevHomeRepos\\Projekt-TAIB\\Project\\BLL_EF\\obj\\",
+        "outputPath": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL_EF\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -113,15 +112,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\DevHomeRepos\\Projekt-TAIB\\Project\\BLL\\BLL.csproj": {
-                "projectPath": "D:\\DevHomeRepos\\Projekt-TAIB\\Project\\BLL\\BLL.csproj"
+              "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL\\BLL.csproj": {
+                "projectPath": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL\\BLL.csproj"
+              },
+              "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\DbContext\\DAL.csproj": {
+                "projectPath": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\DbContext\\DAL.csproj"
+              },
+              "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\Models\\Models.csproj": {
+                "projectPath": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\Models\\Models.csproj"
               }
             }
           }
@@ -168,18 +172,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\DevHomeRepos\\Projekt-TAIB\\Project\\Models\\Models.csproj": {
+    "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\DbContext\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DevHomeRepos\\Projekt-TAIB\\Project\\Models\\Models.csproj",
-        "projectName": "Models",
-        "projectPath": "D:\\DevHomeRepos\\Projekt-TAIB\\Project\\Models\\Models.csproj",
+        "projectUniqueName": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\DbContext\\DAL.csproj",
+        "projectName": "DAL",
+        "projectPath": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\DbContext\\DAL.csproj",
         "packagesPath": "C:\\Users\\lukus\\.nuget\\packages\\",
-        "outputPath": "D:\\DevHomeRepos\\Projekt-TAIB\\Project\\Models\\obj\\",
+        "outputPath": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\DbContext\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -194,7 +198,96 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\Models\\Models.csproj": {
+                "projectPath": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\Models\\Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\Models\\Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\Models\\Models.csproj",
+        "projectName": "Models",
+        "projectPath": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\Models\\Models.csproj",
+        "packagesPath": "C:\\Users\\lukus\\.nuget\\packages\\",
+        "outputPath": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\lukus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -255,7 +348,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

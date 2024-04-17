@@ -78,3 +78,5 @@ D:\DevHomeRepos\Projekt-TAIB\Project\BLL_EF\obj\Debug\net8.0\refint\BLL_EF.dll
 D:\DevHomeRepos\Projekt-TAIB\Project\BLL_EF\obj\Debug\net8.0\BLL_EF.pdb
 D:\DevHomeRepos\Projekt-TAIB\Project\BLL_EF\obj\Debug\net8.0\BLL_EF.genruntimeconfig.cache
 D:\DevHomeRepos\Projekt-TAIB\Project\BLL_EF\obj\Debug\net8.0\ref\BLL_EF.dll
+D:\KOLOS REPO\Projekt-TAIB\Project\BLL_EF\bin\Debug\net8.0\DAL.dll
+D:\KOLOS REPO\Projekt-TAIB\Project\BLL_EF\bin\Debug\net8.0\DAL.pdb

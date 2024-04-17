@@ -1609,7 +1609,9 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "BLL": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "8.0.3"
+          "DAL": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "8.0.3",
+          "Models": "1.0.0"
         },
         "compile": {
           "bin/placeholder/BLL_EF.dll": {}
@@ -4610,11 +4612,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DevHomeRepos\\Projekt-TAIB\\Project\\BiletyLotnicze\\BiletyLotnicze.csproj",
+      "projectUniqueName": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BiletyLotnicze\\BiletyLotnicze.csproj",
       "projectName": "BiletyLotnicze",
-      "projectPath": "D:\\DevHomeRepos\\Projekt-TAIB\\Project\\BiletyLotnicze\\BiletyLotnicze.csproj",
+      "projectPath": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BiletyLotnicze\\BiletyLotnicze.csproj",
       "packagesPath": "C:\\Users\\lukus\\.nuget\\packages\\",
-      "outputPath": "D:\\DevHomeRepos\\Projekt-TAIB\\Project\\BiletyLotnicze\\obj\\",
+      "outputPath": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BiletyLotnicze\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4629,21 +4631,20 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\DevHomeRepos\\Projekt-TAIB\\Project\\BLL\\BLL.csproj": {
-              "projectPath": "D:\\DevHomeRepos\\Projekt-TAIB\\Project\\BLL\\BLL.csproj"
+            "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL\\BLL.csproj": {
+              "projectPath": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL\\BLL.csproj"
             },
-            "D:\\DevHomeRepos\\Projekt-TAIB\\Project\\BLL_EF\\BLL_EF.csproj": {
-              "projectPath": "D:\\DevHomeRepos\\Projekt-TAIB\\Project\\BLL_EF\\BLL_EF.csproj"
+            "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL_EF\\BLL_EF.csproj": {
+              "projectPath": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL_EF\\BLL_EF.csproj"
             },
-            "D:\\DevHomeRepos\\Projekt-TAIB\\Project\\DbContext\\DAL.csproj": {
-              "projectPath": "D:\\DevHomeRepos\\Projekt-TAIB\\Project\\DbContext\\DAL.csproj"
+            "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\DbContext\\DAL.csproj": {
+              "projectPath": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\DbContext\\DAL.csproj"
             }
           }
         }
@@ -4707,7 +4708,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

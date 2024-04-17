@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4iI6ZQZjAydP5UR0hBoHTKnbGW7O+5+Fc3zq2BH3vO8e4YL9zLhvdG5MUaXvBw2YSFsarPYAfC0DHyOVLjP1ag==",
+  "dgSpecHash": "Yf/Rb5xvCly0scJGZD0ED7RBmUDATyz6NDpnVqkrT19tll4AGPD79cva/zEFywJ8fPsQ71hvRSlaLO5l9G/jsg==",
   "success": true,
-  "projectFilePath": "D:\\DevHomeRepos\\Projekt-TAIB\\Project\\BLL\\BLL.csproj",
+  "projectFilePath": "D:\\KOLOS REPO\\Projekt-TAIB\\Project\\BLL\\BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lukus\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\lukus\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
