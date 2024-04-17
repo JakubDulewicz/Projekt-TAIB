@@ -2,6 +2,9 @@
 using BLL_EF;
 using DAL;
 using Microsoft.AspNetCore.Mvc;
+using Models;
+using System.Diagnostics.Metrics;
+using System.Net;
 
 namespace BiletyLotnicze.Controllers
 {
@@ -35,6 +38,20 @@ namespace BiletyLotnicze.Controllers
             }
 
         }
+        [HttpPost("AddFlight/{Name},{Destination},{Departure},{Arrival},{Status},{AirportIdTo},{AirportIdFrom},{PlaneId}")]
+        public async Task<IActionResult> CreateFlight(string Name, string Destination, DateTime Departure, DateTime Arrival, Status Status, int AirportIdTo, int AirportIdFrom, int PlaneId)
+        {
+            try
+            {
+                await _flightService.CreateFlight(Name, Destination, Departure, Arrival, Status, AirportIdTo, AirportIdFrom, PlaneId);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
 
     }
 }

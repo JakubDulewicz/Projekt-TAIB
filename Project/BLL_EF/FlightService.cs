@@ -32,16 +32,19 @@ namespace BLL_EF
             }
         }
 
-        public async Task CreateFlight(int flightId, string name, string destination, DateTime departure, DateTime arrival, Status status, int airportToId, int airportFromId, int planeId)
+        public async Task CreateFlight(string name, string destination, DateTime departure, DateTime arrival, Status status, int airportToId, int airportFromId, int planeId)
         {
             var flight = new Flight
             {
-                FlightId = flightId,
+                //FlightId = flightId,
                 Name = name,
                 Destination = destination,
                 Departure = departure,
                 Arrival = arrival,
-                Status = status
+                Status = status,
+                AirportIdTo = airportToId,
+                AirportIdFrom = airportFromId,
+                PlaneId = planeId,
             };
 
             _flightsContext.Flight.Add(flight);
