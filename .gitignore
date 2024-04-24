@@ -1,4 +1,12 @@
-# userfile
-
-
 # compilation files
+Project/.vs/
+Project/BiletyLotnicze/bin/
+Project/BiletyLotnicze/obj/
+Project/BLL/bin/
+Project/BLL/obj/
+Project/BLL_EF/bin/
+Project/BLL_EF/obj/
+Project/DbContext/bin/
+Project/DbContext/obj/
+Project/Models/bin/
+Project/Models/obj/
