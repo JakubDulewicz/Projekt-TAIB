@@ -19,7 +19,7 @@ namespace BLL
         public int AirportToId { get; set; }
         public int AirportFromId { get; set; }
         public int PlaneId { get; set; }
-        public IEnumerable<TicketDTO> Tickets { get; init; }
+        public IEnumerable<TicketDTO>? Tickets { get; init; }
 
     }
 }

@@ -26,7 +26,7 @@ namespace BLL_EF
         {
             var airport = new Models.Airport()
             {
-                //Id = airportId,
+                AirportId = request.Id,
                 Name = request.Name,
                 IATA_CODE = request.IATA_CODE,
                 Country = request.Country,
@@ -34,16 +34,8 @@ namespace BLL_EF
                 Address = request.Address,
 
             };
+            
             _flightsContext.Airport.Add(airport);
-
-            //var p = request.Planes.ConvertAll(x => new Plane()
-            //{
-            //    Model = x.Model,
-            //    PlaneId = x.Id,
-
-            //});
-
-            //_flightsContext.Plane.AddRangeAsync(p);
             await _flightsContext.SaveChangesAsync();
         }
 
@@ -94,16 +86,13 @@ namespace BLL_EF
                 var assignedPlane = await _flightsContext.Plane.FindAsync(planeId);
                 if (assignedPlane != null)
                 {
-                    // Inicjalizacja kolekcji jeśli jest null
+
                     if (assignedAirport.Planes == null)
                     {
                         assignedAirport.Planes = new List<Plane>();
                     }
 
-                    // Dodaj samolot bezpośrednio do kolekcji
                     assignedAirport.Planes.Add(assignedPlane);
-
-                    // Zapisz zmiany w kontekście
                     await _flightsContext.SaveChangesAsync();
                 }
                 else

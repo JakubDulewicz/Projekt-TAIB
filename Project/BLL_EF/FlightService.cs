@@ -26,25 +26,33 @@ namespace BLL_EF
             if (flight != null)
             {
                 flight.Plane = await _flightsContext.Plane.FindAsync(planeId);
-                flight.AirportIdTo = airportToId;
-                flight.AirportIdFrom = airportFromId;
+                //flight.AirportIdTo = airportToId;
+                //flight.AirportIdFrom = airportFromId;
                 await _flightsContext.SaveChangesAsync();
             }
         }
 
-        public async Task CreateFlight(string name, string destination, DateTime departure, DateTime arrival, Status status, int airportToId, int airportFromId, int planeId)
+        public async Task CreateFlight(FlightDTO flightDTO)
         {
             var flight = new Flight
             {
                 //FlightId = flightId,
-                Name = name,
-                Destination = destination,
-                Departure = departure,
-                Arrival = arrival,
-                Status = status,
-                AirportIdTo = airportToId,
-                AirportIdFrom = airportFromId,
-                PlaneId = planeId,
+                Name = flightDTO.Name,
+                Destination = flightDTO.Destination,
+                Departure = flightDTO.Departure,
+                Arrival = flightDTO.Arrival,
+                Status = flightDTO.Status,
+                //AirportFrom = flightDTO
+                // AirportIdFrom = flightDTO.AirportFromId,
+                //AirportIdTo = flightDTO.AirportToId,
+                //PlaneId = flightDTO.PlaneId,
+                //Destination = destination,
+                //Departure = departure,
+                //Arrival = arrival,
+                //Status = status,
+                //AirportIdTo = airportToId,
+                //AirportIdFrom = airportFromId,
+                //PlaneId = planeId,
             };
 
             _flightsContext.Flight.Add(flight);
@@ -73,9 +81,12 @@ namespace BLL_EF
                 Departure = f.Departure,
                 Arrival = f.Arrival,
                 Status = f.Status,
-                AirportToId = f.AirportIdTo ?? 0,
-                AirportFromId = f.AirportIdFrom ?? 0,
-                PlaneId = f.PlaneId ?? 0
+                //AirportFromId = f.AirportFrom
+                //AirportToId = f.AirportTo,
+
+                //AirportToId = f.AirportIdTo ?? 0,
+                //AirportFromId = f.AirportIdFrom ?? 0,
+                //PlaneId = f.PlaneId ?? 0
                 //AirportToId = f.AirportIdTo,
                 //AirportFromId = (int)f.AirportIdFrom,
                 //PlaneId = (int)f.Plane.PlaneId
@@ -88,7 +99,7 @@ namespace BLL_EF
             if (flight != null)
             {
                 flight.Plane = await _flightsContext.Plane.FindAsync(planeId);
-                flight.AirportIdTo = airportId;
+                //flight.AirportIdTo = airportId;
                 await _flightsContext.SaveChangesAsync();
             }
         }

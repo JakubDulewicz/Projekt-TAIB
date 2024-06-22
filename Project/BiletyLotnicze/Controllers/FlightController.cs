@@ -2,6 +2,7 @@
 using BLL_EF;
 using DAL;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Models;
 using System.Diagnostics.Metrics;
 using System.Net;
@@ -38,17 +39,20 @@ namespace BiletyLotnicze.Controllers
             }
 
         }
-        [HttpPost("AddFlight/{Name},{Destination},{Departure},{Arrival},{Status},{AirportIdTo},{AirportIdFrom},{PlaneId}")]
-        public async Task<IActionResult> CreateFlight(string Name, string Destination, DateTime Departure, DateTime Arrival, Status Status, int AirportIdTo, int AirportIdFrom, int PlaneId)
+        [HttpPost("AddFlight")]
+        public async Task<IActionResult> CreateFlight(FlightDTO request)
         {
             try
             {
-                await _flightService.CreateFlight(Name, Destination, Departure, Arrival, Status, AirportIdTo, AirportIdFrom, PlaneId);
+                await _flightService.CreateFlight(request);
                 return Ok();
             }
-            catch (Exception ex)
+            catch (DbUpdateException ex)
             {
-                return BadRequest(ex.Message);
+
+                var innerException = ex.InnerException;
+                Console.WriteLine(innerException?.Message);
+                throw;
             }
         }
 
