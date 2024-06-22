@@ -1,6 +1,7 @@
 ﻿using BLL;
 using DAL;
 using Microsoft.EntityFrameworkCore;
+using Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,9 +23,19 @@ namespace BLL_EF
             throw new NotImplementedException();
         }
 
-        public Task DeletePlane(int planeID)
+        public async Task DeletePlane(int planeID)
         {
-            throw new NotImplementedException();
+            var deletePlane = await _flightsContext.Plane.FindAsync(planeID);
+            if (deletePlane != null)
+            {
+                _flightsContext.Plane.Remove(deletePlane);
+                await _flightsContext.SaveChangesAsync();
+            }
+            else
+            {
+                throw new ArgumentException($"Unable to delete plane {planeID}");
+            }
+
         }
 
         public async Task<IEnumerable<PlaneRequest>> GetAllPlanes()

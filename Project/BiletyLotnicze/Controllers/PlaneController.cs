@@ -48,6 +48,20 @@ namespace BiletyLotnicze.Controllers
             }
 
         }
+        
+        [HttpDelete("DeletePlane")]
+        public async Task<IActionResult> DeletePlane(int id)
+        {
+            try
+            {
+                await _planeService.DeletePlane(id);
+                return Ok();    
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
 
     }
 }
