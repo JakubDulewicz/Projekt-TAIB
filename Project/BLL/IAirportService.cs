@@ -8,7 +8,7 @@ namespace BLL
 {
     public interface IAirportService
     {
-        Task AddAirport(string name, string IATA, string country, string city, string address);
+        Task AddAirport(AirportRequest request);
         Task RemoveAirport(int airportId);
         Task AssignPlaneToAirport(int airportId, int planeId);
         public Task<IEnumerable<AirportDTO>> GetAllAirports(); 

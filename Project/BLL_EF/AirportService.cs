@@ -21,18 +21,28 @@ namespace BLL_EF
 
 
 
-       public async Task AddAirport(/*int airportId,*/ string name, string IATA, string country, string city, string address)
+       public async Task AddAirport(AirportRequest request)
         {
             var airport = new Models.Airport()
             {
                 //Id = airportId,
-                Name = name,
-                IATA_CODE = IATA,
-                Country = country,
-                City = city,
-                Address = address
+                Name = request.Name,
+                IATA_CODE = request.IATA_CODE,
+                Country = request.Country,
+                City = request.City,
+                Address = request.Address,
+       
             };
             _flightsContext.Airport.Add(airport);
+
+            //var p = request.Planes.ConvertAll(x => new Plane()
+            //{
+            //    Model = x.Model,
+            //    PlaneId = x.Id,
+
+            //});
+
+            //_flightsContext.Plane.AddRangeAsync(p);
             await _flightsContext.SaveChangesAsync();
         }
 

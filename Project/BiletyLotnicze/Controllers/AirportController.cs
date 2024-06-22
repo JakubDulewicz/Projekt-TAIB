@@ -23,28 +23,22 @@ namespace BiletyLotnicze.Controllers
         [HttpGet("AllAirports")]
         public async Task<IActionResult> Get()
         {
-            try
-            {
+            //throw new Exception("HDR");
                 var airports = await _airportService.GetAllAirports();
                 if (airports == null)
                 {
                     return NotFound("Airports not found");
                 }
                 return Ok(airports);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest($"Bad Request {ex.Message} ");
-            }
 
         }
 
-      [HttpPost("AddAirport/{Name},{IATA_CODE},{Country},{City},{Address}")]
-        public async Task<IActionResult> AddAirport(string Name, string IATA_CODE, string Country, string City, string Address)
+        [HttpPost("AddAirport")]
+        public async Task<IActionResult> AddAirport(AirportRequest request)
         {
             try
             {
-                await _airportService.AddAirport(Name, IATA_CODE, Country, City, Address);
+                await _airportService.AddAirport(request);
                 return Ok();
             }
             catch (Exception ex)
@@ -53,7 +47,7 @@ namespace BiletyLotnicze.Controllers
             }
         }
 
-        [HttpPost("/planes/assign/{airportid},{planeid}")]
+        [HttpPost/*("/planes/assign/{airportid},{planeid}")*/]
         public async Task<IActionResult> AssignPlane(int airportid, int planeid)
         {
             try

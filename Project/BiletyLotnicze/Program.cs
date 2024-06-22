@@ -1,9 +1,10 @@
+using BiletyLotnicze;
 using BLL;
 using BLL_EF;
 using DAL;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Services.AddScoped<ErrorHandling>();
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -29,6 +30,7 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
+app.UseMiddleware<ErrorHandling>();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
