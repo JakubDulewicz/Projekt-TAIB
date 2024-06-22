@@ -14,6 +14,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<FlightsContext>();
 builder.Services.AddScoped<AirportService>();
 builder.Services.AddScoped<FlightService>();
+builder.Services.AddScoped<PlaneService>();
 
 
 builder.Services.AddCors(options =>

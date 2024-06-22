@@ -15,7 +15,17 @@ namespace BLL
         public DateOnly YearOfProduction { get; init; }
         public int SeatCount { get; init; }
         public bool HasPrivateCabins { get; init; }
-        public FlightDTO? Flights { get; init; }
-        public AirlineDTO? Airlines { get; init; }
+        public AirlineDTO Airlines { get; init; }
+        public ICollection<FlightDTO> flight { get; set; }
+        
+    }
+
+    public class PlaneRequest
+    {
+        public int Id { get; init; }
+        public string Model { get; init; }
+        public DateOnly YearOfProduction { get; init ; }
+        public int SeatCount { get; init;}
+        public bool HasPrivateCabins { get; init;}
     }
 }

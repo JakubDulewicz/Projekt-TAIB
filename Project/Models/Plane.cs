@@ -28,8 +28,10 @@ namespace Models
         [Required]
         public bool HasPrivateCabins { get; set; }
 
-        public ICollection<Flight> Flights { get; set; }
-        public Airline Airlines { get; set; }
+        public Airline? Airlines { get; set; }
+
+        public ICollection<Flight>? Flights { get; set; }
+
 
         public void Configure(EntityTypeBuilder<Plane> builder)
         {

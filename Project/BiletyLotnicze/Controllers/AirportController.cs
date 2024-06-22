@@ -47,7 +47,7 @@ namespace BiletyLotnicze.Controllers
             }
         }
 
-        [HttpPost/*("/planes/assign/{airportid},{planeid}")*/]
+        [HttpPost("AssignPlaneToAirport") /*("/planes/assign/{airportid},{planeid}")*/]
         public async Task<IActionResult> AssignPlane(int airportid, int planeid)
         {
             try
@@ -61,7 +61,7 @@ namespace BiletyLotnicze.Controllers
             }
         }
 
-        [HttpDelete("DeleteAirport/{id}")]
+        [HttpDelete("DeleteAirport")]
         public async Task<IActionResult> DeleteAirport(int id)
         {
             try
