@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using BLL;
 using DAL;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Models;
 
 namespace BLL_EF
@@ -13,7 +14,7 @@ namespace BLL_EF
     public class AirportService : IAirportService
     {
         readonly FlightsContext _flightsContext;
-        
+
         public AirportService(FlightsContext flightsContext)
         {
             _flightsContext = flightsContext;
@@ -21,7 +22,7 @@ namespace BLL_EF
 
 
 
-       public async Task AddAirport(AirportRequest request)
+        public async Task AddAirport(AirportRequest request)
         {
             var airport = new Models.Airport()
             {
@@ -31,7 +32,7 @@ namespace BLL_EF
                 Country = request.Country,
                 City = request.City,
                 Address = request.Address,
-       
+
             };
             _flightsContext.Airport.Add(airport);
 
@@ -49,7 +50,7 @@ namespace BLL_EF
         public async Task RemoveAirport(int airportId)
         {
             var deletedAirport = await _flightsContext.Airport.FindAsync(airportId);
-            if (deletedAirport != null) 
+            if (deletedAirport != null)
             {
                 _flightsContext.Airport.Remove(deletedAirport);
                 await _flightsContext.SaveChangesAsync();
@@ -62,7 +63,10 @@ namespace BLL_EF
 
         public async Task<IEnumerable<AirportDTO>> GetAllAirports()
         {
-            var airports = await _flightsContext.Airport.ToListAsync();
+            var airports = await _flightsContext.Airport
+                .Include(a => a.Planes)
+                .ToListAsync();
+
             return airports.Select(airport => new AirportDTO
             {
                 Id = airport.AirportId,
@@ -70,7 +74,15 @@ namespace BLL_EF
                 IATA_CODE = airport.IATA_CODE,
                 Country = airport.Country,
                 City = airport.City,
-                Address = airport.Address
+                Address = airport.Address,
+                Planes = airport.Planes.Select(plane => new PlaneDTO
+                {
+                    Id = plane.PlaneId,
+                    Model = plane.Model,
+                    YearOfProduction = plane.YearOfProduction,
+                    SeatCount = plane.SeatCount,
+                    HasPrivateCabins = plane.HasPrivateCabins
+                }).ToList()
             });
         }
 
