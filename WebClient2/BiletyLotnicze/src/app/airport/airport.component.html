@@ -1,0 +1,29 @@
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>IATA Code</th>
+        <th>Country</th>
+        <th>City</th>
+        <th>Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let airport of paginatedAirports">
+        <td>{{ airport.airportId }}</td>
+        <td>{{ airport.name }}</td>
+        <td>{{ airport.iATA_CODE }}</td>
+        <td>{{ airport.country }}</td>
+        <td>{{ airport.city }}</td>
+        <td>{{ airport.address }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <!-- Pagination Controls -->
+  <div class="pagination-controls">
+    <button (click)="previousPage()" [disabled]="page === 1">Previous</button>
+    <button *ngFor="let p of [].constructor(totalPages); let i = index" (click)="goToPage(i + 1)" [class.active]="page === i + 1">{{ i + 1 }}</button>
+    <button (click)="nextPage()" [disabled]="page === totalPages">Next</button>
+  </div>
