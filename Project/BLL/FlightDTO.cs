@@ -16,9 +16,9 @@ namespace BLL
         public DateTime Departure {  get; init; }
         public DateTime Arrival { get; init; }
         public Status Status { get; set; }
-        public int AirportToId { get; set; }
-        public int AirportFromId { get; set; }
-        public int PlaneId { get; set; }
+        public int? AirportToAirportId { get; set; }
+        public int? AirportFromAirportId { get; set; }
+        public int? PlaneId { get; set; }
         public IEnumerable<TicketDTO>? Tickets { get; init; }
 
     }

@@ -40,13 +40,13 @@ namespace Models
         public Status Status { get; set; }
 
         [Required]
-        public int? AirportIdTo { get; set; }
+        public int AirportToAirportId { get; set; }
 
         [Required]
-        public int? AirportIdFrom { get; set; }
+        public int  AirportFromAirportId { get; set; }
 
         [Required]
-        public int? PlaneId { get; set; }
+        public int PlaneId { get; set; }
 
         public Airport AirportFrom { get; set; }
         public Airport AirportTo { get; set; }
@@ -59,6 +59,26 @@ namespace Models
                 .HasMany(f => f.Tickets)
                 .WithOne(t => t.Flight)
                 .OnDelete(DeleteBehavior.Restrict);
+
+            builder
+                .HasOne(f => f.AirportFrom)
+                .WithMany()
+                .HasForeignKey(f => f.AirportToAirportId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder
+                .HasOne(f => f.AirportTo)
+                .WithMany()
+                .HasForeignKey(f => f.AirportFromAirportId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder
+                .HasOne(f => f.Plane)
+                .WithMany()
+                .HasForeignKey(f => f.PlaneId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+
         }
     }
 }

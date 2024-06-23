@@ -13,7 +13,6 @@ namespace BLL_EF
     public class FlightService : IFlightService
     {
         readonly FlightsContext _flightsContext;
-        readonly IAirportService _airportService;
 
         public FlightService(FlightsContext context)
         {
@@ -37,13 +36,23 @@ namespace BLL_EF
             var flight = new Flight
             {
                 //FlightId = flightId,
+                //Name = flightDTO.Name,
+                //Destination = flightDTO.Destination,
+                //Departure = flightDTO.Departure,
+                //Arrival = flightDTO.Arrival,
+                //Status = flightDTO.Status,
+
+
                 Name = flightDTO.Name,
                 Destination = flightDTO.Destination,
                 Departure = flightDTO.Departure,
                 Arrival = flightDTO.Arrival,
                 Status = flightDTO.Status,
+                AirportToAirportId = (int)flightDTO.AirportToAirportId,
+                AirportFromAirportId = (int)flightDTO.AirportFromAirportId,
+                PlaneId = (int)flightDTO.PlaneId
                 //AirportFrom = flightDTO
-                // AirportIdFrom = flightDTO.AirportFromId,
+                //AirportIdFrom = flightDTO.AirportFromId,
                 //AirportIdTo = flightDTO.AirportToId,
                 //PlaneId = flightDTO.PlaneId,
                 //Destination = destination,
@@ -81,16 +90,10 @@ namespace BLL_EF
                 Departure = f.Departure,
                 Arrival = f.Arrival,
                 Status = f.Status,
-                //AirportFromId = f.AirportFrom
-                //AirportToId = f.AirportTo,
-
-                //AirportToId = f.AirportIdTo ?? 0,
-                //AirportFromId = f.AirportIdFrom ?? 0,
-                //PlaneId = f.PlaneId ?? 0
-                //AirportToId = f.AirportIdTo,
-                //AirportFromId = (int)f.AirportIdFrom,
-                //PlaneId = (int)f.Plane.PlaneId
-            });    
+                AirportToAirportId = f.AirportToAirportId,
+                AirportFromAirportId = f.AirportFromAirportId,
+                PlaneId = f.PlaneId
+            });
         }
 
         public async Task MovePlaneToDestination(int flightId, int planeId, int airportId)
