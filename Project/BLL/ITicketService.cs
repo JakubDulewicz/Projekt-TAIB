@@ -9,10 +9,9 @@ namespace BLL
 {
     public interface ITicketService
     {
-        Task CreateTicket(string seat, Class flightClass,double price, int flightId, int airlineId);
-        
+        Task CreateTicket(TicketDTO ticketDTO);
         Task AsignTicketToUser(int ticketId, int userId);
-        Task DeleteTicket(TicketDTO ticketId);
+        Task DeleteTicket(int ticketId);
         Task<IEnumerable<TicketDTO>> GetTickets();
     }
 }

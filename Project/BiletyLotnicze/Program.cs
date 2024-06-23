@@ -15,6 +15,7 @@ builder.Services.AddDbContext<FlightsContext>();
 builder.Services.AddScoped<AirportService>();
 builder.Services.AddScoped<FlightService>();
 builder.Services.AddScoped<PlaneService>();
+builder.Services.AddScoped<TicketService>();
 
 
 builder.Services.AddCors(options =>
