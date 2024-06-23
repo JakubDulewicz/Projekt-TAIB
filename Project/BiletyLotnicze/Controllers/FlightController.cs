@@ -16,7 +16,7 @@ namespace BiletyLotnicze.Controllers
         readonly FlightsContext _flightsContext;
         readonly FlightService _flightService;
 
-        public FlightController (FlightService flightController)
+        public FlightController(FlightService flightController)
         {
             _flightService = flightController;
         }
@@ -55,6 +55,40 @@ namespace BiletyLotnicze.Controllers
                 throw;
             }
         }
+        
+        [HttpPost("ChangeFlightStatus")]
+        public async Task<IActionResult> ChangeFlightStatus(int id, Status status)
+        {
+            try
+            {
+                await _flightService.SetStatus(id,status);
+                return Ok();
+            }
+            catch (DbUpdateException ex)
+            {
+
+                var innerException = ex.InnerException;
+                Console.WriteLine(innerException?.Message);
+                throw;
+            }
+        }
+
+        [HttpDelete("DeleteFlight")]
+        public async Task<IActionResult> DeleteFlight(int request)
+        {
+            try
+            {
+                await _flightService.DeleteFlight(request);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+
+
 
 
     }

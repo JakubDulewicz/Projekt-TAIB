@@ -35,14 +35,6 @@ namespace BLL_EF
         {
             var flight = new Flight
             {
-                //FlightId = flightId,
-                //Name = flightDTO.Name,
-                //Destination = flightDTO.Destination,
-                //Departure = flightDTO.Departure,
-                //Arrival = flightDTO.Arrival,
-                //Status = flightDTO.Status,
-
-
                 Name = flightDTO.Name,
                 Destination = flightDTO.Destination,
                 Departure = flightDTO.Departure,
@@ -51,17 +43,7 @@ namespace BLL_EF
                 AirportToAirportId = (int)flightDTO.AirportToAirportId,
                 AirportFromAirportId = (int)flightDTO.AirportFromAirportId,
                 PlaneId = (int)flightDTO.PlaneId
-                //AirportFrom = flightDTO
-                //AirportIdFrom = flightDTO.AirportFromId,
-                //AirportIdTo = flightDTO.AirportToId,
-                //PlaneId = flightDTO.PlaneId,
-                //Destination = destination,
-                //Departure = departure,
-                //Arrival = arrival,
-                //Status = status,
-                //AirportIdTo = airportToId,
-                //AirportIdFrom = airportFromId,
-                //PlaneId = planeId,
+
             };
 
             _flightsContext.Flight.Add(flight);
@@ -95,6 +77,7 @@ namespace BLL_EF
                 PlaneId = f.PlaneId
             });
         }
+
 
         public async Task MovePlaneToDestination(int flightId, int planeId, int airportId)
         {
