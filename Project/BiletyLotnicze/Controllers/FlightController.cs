@@ -73,6 +73,35 @@ namespace BiletyLotnicze.Controllers
             }
         }
 
+        [HttpPost("DepartFlight")]
+        public async Task<IActionResult> StartFlight(int id)
+        {
+            try
+            {
+                await _flightService.StartFlight(id);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPost("ArriveFlight")]
+        public async Task<IActionResult> FinishedFlight(int id)
+        {
+            try
+            {
+                await _flightService.FinishFlight(id);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+
         [HttpDelete("DeleteFlight")]
         public async Task<IActionResult> DeleteFlight(int request)
         {

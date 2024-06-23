@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using BLL;
 using DAL;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Models;
 
 namespace BLL_EF
@@ -76,6 +77,51 @@ namespace BLL_EF
                 AirportFromAirportId = f.AirportFromAirportId,
                 PlaneId = f.PlaneId
             });
+        }
+
+        public async Task StartFlight(int flightId)
+        {
+            var flight = await _flightsContext.Flight.FindAsync(flightId);
+            if (flight != null)
+            {
+                var airportFrom = await _flightsContext.Airport.FindAsync(flight.AirportFromAirportId);
+                if (airportFrom != null)
+                {
+                    flight.Status = Status.Departed;
+                    _flightsContext.Flight.Update(flight);
+
+                    var plane = await _flightsContext.Plane.FindAsync(flight.PlaneId);
+                    if (!airportFrom.Planes.IsNullOrEmpty() && airportFrom.Planes.Contains(plane))
+                    {
+                        airportFrom.Planes.Remove(plane);
+                        _flightsContext.Airport.Update(airportFrom);
+                    }
+                    await _flightsContext.SaveChangesAsync();
+                }
+            }
+        }
+
+        public async Task FinishFlight(int flightId)
+        {
+            var flight = await _flightsContext.Flight.FindAsync(flightId);
+            if (flight != null)
+            {
+                var airportTo = await _flightsContext.Airport.FindAsync(flight.AirportToAirportId);
+                if (airportTo != null)
+                {
+                    flight.Status = Status.Arrived;
+                    var plane = await _flightsContext.Plane.FindAsync(flight.PlaneId);
+
+                    if (airportTo.Planes == null)
+                        airportTo.Planes = new List<Plane>();
+
+                    airportTo.Planes.Add(plane);
+
+                    _flightsContext.Flight.Update(flight);
+                    _flightsContext.Airport.Update(airportTo);
+                    await _flightsContext.SaveChangesAsync();
+                }
+            }
         }
 
 
