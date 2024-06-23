@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using BLL;
 using DAL;
+using Microsoft.EntityFrameworkCore;
 using Models;
 
 namespace BLL_EF
@@ -63,9 +64,19 @@ namespace BLL_EF
             }
         }
 
-        public Task<IEnumerable<TicketDTO>> GetTickets()
+        public async Task<IEnumerable<TicketDTO>> GetTickets()
         {
-            throw new NotImplementedException();
+            var tickets = await _flightsContext.Ticket.ToListAsync();
+            return tickets.Select(t => new TicketDTO
+            {
+                Id = t.TicketId,
+                Seat = t.Seat,
+                Class = t.Class,
+                Price = t.Price,
+                UserId = t.User.UserId,
+                FlightId = t.Flight.FlightId,
+                AirlineId = t.Airlines.AirlineId,
+            });
         }
 
         //Task ITicketService.CreateTicket(string seat, Class flightClass, double price, int flightId, int airlineId)

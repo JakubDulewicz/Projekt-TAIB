@@ -17,6 +17,19 @@ namespace BiletyLotnicze.Controllers
             _ticketService = ticketService;
         }
 
+        [HttpGet("AllTickets")]
+        public async Task<IActionResult> Get()
+        {
+            //throw new Exception("HDR");
+            var airports = await _ticketService.GetTickets();
+            if (airports == null)
+            {
+                return NotFound("Airports not found");
+            }
+            return Ok(airports);
+
+        }
+
         [HttpPost("CreateTicket")]
         public async Task<IActionResult> AddAirport(TicketDTO ticketDTO)
         {
@@ -30,5 +43,7 @@ namespace BiletyLotnicze.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+
     }
 }

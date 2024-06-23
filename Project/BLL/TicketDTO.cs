@@ -19,6 +19,6 @@ namespace BLL
         public int UserId { get; set; }
         public int FlightId { get; init; }
         public int AirlineId { get; init; }
-        public UserDTO? User { get; init; } // Need tests
+        public UserDTO? User { get; init; }
     }
 }
