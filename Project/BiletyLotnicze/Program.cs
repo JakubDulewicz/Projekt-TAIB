@@ -35,7 +35,7 @@ builder.Services.AddAuthentication(options =>
         ValidateIssuerSigningKey = true,
         ValidIssuer = "BiletyLotnicze.local",
         ValidAudience = "BiletyLotnicze.local",
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("0000"))
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("ThisIsA32ByteLongSecureKeyForJWTAuth"))
     };
 });
 
@@ -63,6 +63,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseCors("BiletyLotnicze");
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

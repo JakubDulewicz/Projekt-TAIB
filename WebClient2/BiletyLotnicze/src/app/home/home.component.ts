@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FlightService } from '../Services/flight.service'; // Spójny import
 import { AirportService } from '../Services/airport.service';
-import { AirportDTO } from '../Models/airport.model';
-import { FlightDTO } from '../Models/flight.model';
 
 @Component({
   selector: 'app-home',
