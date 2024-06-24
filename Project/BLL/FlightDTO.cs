@@ -20,6 +20,12 @@ namespace BLL
         public int? AirportFromAirportId { get; set; }
         public int? PlaneId { get; set; }
         public IEnumerable<TicketDTO>? Tickets { get; init; }
-
     }
+    public class FlightRequest
+    {
+        public string airportNameFrom {  get; set; }
+        public string airportNameTo { get; set; }
+        public DateOnly flightDate {  get; set; }
+    }
+
 }

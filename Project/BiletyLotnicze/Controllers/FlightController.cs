@@ -39,6 +39,35 @@ namespace BiletyLotnicze.Controllers
             }
 
         }
+
+        [HttpGet("FindFlightByNameAndDate")]
+        public async Task<IActionResult> GetAirportByNameAndDate(string airportNameFrom, string airportNameTo, DateTime flightDate)
+        {
+            try
+            {
+                var request = new FlightRequest
+                {
+                    airportNameFrom = airportNameFrom,
+                    airportNameTo = airportNameTo,
+                    flightDate = DateOnly.FromDateTime(flightDate)
+                };
+
+
+                var flights = await _flightService.GetFlightsByDateAndAirport(request);
+                if (flights == null)
+                {
+                    return NotFound("Flights not found");
+                }
+                return Ok(flights);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Bad Request {ex.Message} ");
+            }
+
+        }
+
+
         [HttpPost("AddFlight")]
         public async Task<IActionResult> CreateFlight(FlightDTO request)
         {

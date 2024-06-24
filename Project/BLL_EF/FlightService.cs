@@ -145,5 +145,29 @@ namespace BLL_EF
                 await _flightsContext.SaveChangesAsync();
             }
         }
+
+        public async Task<IEnumerable<FlightDTO>> GetFlightsByDateAndAirport(FlightRequest request)
+        {
+            var flights = await _flightsContext.Flight
+                .Include(f => f.AirportFrom)
+                .Include(f => f.AirportTo)
+                .Where(f => f.AirportFrom.Name == request.airportNameFrom &&
+                   f.AirportTo.Name == request.airportNameTo &&
+                   f.Departure.Date == request.flightDate.ToDateTime(TimeOnly.MinValue).Date)
+                .ToListAsync();
+
+            return flights.Select(f => new FlightDTO
+            {
+                Id = f.FlightId,
+                Name = f.Name,
+                Destination = f.Destination,
+                Departure = f.Departure,
+                Arrival = f.Arrival,
+                Status = f.Status,
+                AirportToAirportId = f.AirportToAirportId,
+                AirportFromAirportId = f.AirportFromAirportId,
+                PlaneId = f.PlaneId
+            });
+        }
     }
 }

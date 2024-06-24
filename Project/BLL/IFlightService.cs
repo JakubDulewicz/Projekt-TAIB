@@ -14,6 +14,7 @@ namespace BLL
         Task AssignPlanesAndAirports(int flightId, int planeid, int airportToId, int airportFromId);
         Task MovePlaneToDestination(int flightId, int planeId, int airportId);
         Task SetStatus(int flightId, Status newStatus);
+        Task <IEnumerable<FlightDTO>> GetFlightsByDateAndAirport(FlightRequest request);
         Task<IEnumerable<FlightDTO>> GetFlights();
     }
 }
