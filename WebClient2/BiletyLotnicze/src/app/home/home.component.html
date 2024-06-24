@@ -1,0 +1,54 @@
+<div class="header">
+  <div class="logo">TU LOGO</div>
+  <div class="menu">
+    <a routerLink="/">Home</a>
+    <a routerLink="/about">About</a>
+    <a routerLink="/contact">Contact</a>
+    <a routerLink="/login">Sign In</a>
+    <a routerLink="/signup">Sign Up</a>
+  </div>
+</div>
+<div class="content">
+  <div class="sidebar">TU NA PEWNO COŚ BĘDZIE</div>
+  <div class="main">
+    <div class="search-bar">
+      <label>
+        From
+        <select [(ngModel)]="from" (change)="filterFlights()">
+          <option value="" disabled selected>Select Airport</option>
+          <option *ngFor="let airport of airports" [value]="airport.name">{{ airport.name }}</option>
+        </select>
+      </label>
+      <label>
+        To
+        <select [(ngModel)]="to" (change)="filterFlights()">
+          <option value="" disabled selected>Select Airport</option>
+          <option *ngFor="let airport of airports" [value]="airport.name">{{ airport.name }}</option>
+        </select>
+      </label>
+      <label>
+        Date
+        <input type="date" [(ngModel)]="date" (change)="filterFlights()">
+      </label>
+      <button (click)="filterFlights()">Search</button>
+    </div>
+    <div *ngIf="flights.length === 0">Loading flights...</div> <!-- Dodano informację o ładowaniu -->
+    <div class="flights">
+        <div *ngFor="let flight of flights" class="flight">
+          <div class="flight-details">
+            <div class="departure">
+              <div>Departure</div>
+              <div>{{ getAirportNameById(flight.airportFromAirportId) }}</div>
+              <div>{{ flight.departure | date: 'shortTime' }}</div>
+            </div>
+            <div class="arrival">
+              <div>Arrival</div>
+              <div>{{ getAirportNameById(flight.airportToAirportId) }}</div>
+              <div>{{ flight.arrival | date: 'shortTime' }}</div>
+            </div>
+          </div>
+          <div class="airline">
+            <button>Buy Ticket</button>
+          </div>
+        </div>
+      </div>
