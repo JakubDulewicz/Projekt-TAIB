@@ -1,3 +1,8 @@
+html, body, div {
+  font-family:Verdana, Tahoma, sans-serif, Roboto;
+}
+
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -15,6 +20,13 @@
     margin: 0 10px;
     color: white;
     text-decoration: none;
+  }
+
+  .menu a:hover {
+    color:gold;
+  }
+  .menu a:active {
+    color:goldenrod;
   }
   
   .content {
@@ -48,9 +60,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #ddd;
+    border: 1px solid #afafaf;
     padding: 10px;
     margin-bottom: 10px;
+    border-radius:10px;
   }
   
   .flight-details {
@@ -69,7 +82,15 @@
   
   .airline button {
     background-color: yellow;
-    border: none;
+    border: 1px solid black;
+    border-radius:6px;
     padding: 10px;
     cursor: pointer;
+  }
+
+  .airline button:hover {
+    background-color: gold;
+  }
+  .airline button:active{
+    background-color: goldenrod;
   }
