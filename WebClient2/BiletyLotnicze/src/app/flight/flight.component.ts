@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { FlightService } from '../Services/flight.service'; // Spójny import
+import { AirportService } from '../Services/airport.service';
 
 @Component({
   selector: 'app-flight',

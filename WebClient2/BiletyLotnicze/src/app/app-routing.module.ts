@@ -4,6 +4,7 @@ import { AirportComponent } from './airport/airport.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { FlightComponent } from './flight/flight.component';
 
 
 const routes: Routes = [
@@ -11,6 +12,7 @@ const routes: Routes = [
   {path: 'airports', component:AirportComponent},
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
+  {path: 'flights', component: FlightComponent},
   { path: '**', redirectTo: '' }
 ];
 
