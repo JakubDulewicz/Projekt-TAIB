@@ -10,6 +10,6 @@ namespace BLL
     public interface IAuthService
     {
         Task<string> Register(UserDTO userDto);
-        //Task<string> Login(LoginRequest request);
+        Task<string> Login(LoginRequest request);
     }
 }

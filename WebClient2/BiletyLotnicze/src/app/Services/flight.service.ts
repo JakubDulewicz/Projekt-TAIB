@@ -21,7 +21,7 @@ export class FlightService {
   }
 
   searchFlights(from: string, to: string, date: string): Observable<any> {
-    const url = `${this.baseUrl}/Flight/SearchFlights?from=${from}&to=${to}&date=${date}`;
+    const url = `https://localhost:7009/Flight/FindFlightByNameAndDate?from=${from}&to=${to}&date=${date}`;
     return this.http.get<any>(url);
   }
 }

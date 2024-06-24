@@ -7,7 +7,7 @@ import { AirportComponent } from './airport/airport.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
-import { SignupComponent } from './signup/signup.component';
+import { RegisterComponent } from './register/register.component';
 import { FlightService } from './Services/flight.service';
 import { FlightComponent } from './flight/flight.component';
 
@@ -17,7 +17,7 @@ import { FlightComponent } from './flight/flight.component';
     AirportComponent,
     HomeComponent,
     LoginComponent,
-    SignupComponent,
+    RegisterComponent,
     FlightComponent
   ],
   imports: [
