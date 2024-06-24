@@ -26,7 +26,7 @@ namespace Models
         [Required, MaxLength(50)]
         public string Email { get; set; }
 
-        [Required, MaxLength(20)]
+        [Required, MaxLength(500)]
         public string Password { get; set; }
 
         [Required]

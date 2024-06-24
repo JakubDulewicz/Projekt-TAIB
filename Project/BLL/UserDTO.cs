@@ -11,11 +11,11 @@ namespace BLL
     {
         public int Id { get; init; }
         public string Name { get; init; }
-        public int Pesel { get; init; }
+        public string Pesel { get; init; }
         public string Email { get; init; }
         public string Password { get; init; }
         public DateOnly Date { get; init; }
-        public int Phone { get; init; }
+        public string Phone { get; init; }
         public Roles Roles { get; init; }
         public IEnumerable<TicketDTO> Tickets { get; init; }
     }
