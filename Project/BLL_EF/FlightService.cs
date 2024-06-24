@@ -148,13 +148,19 @@ namespace BLL_EF
 
         public async Task<IEnumerable<FlightDTO>> GetFlightsByDateAndAirport(FlightRequest request)
         {
-            var flights = await _flightsContext.Flight
+            var query = _flightsContext.Flight
                 .Include(f => f.AirportFrom)
                 .Include(f => f.AirportTo)
                 .Where(f => f.AirportFrom.Name == request.airportNameFrom &&
-                   f.AirportTo.Name == request.airportNameTo &&
-                   f.Departure.Date == request.flightDate.ToDateTime(TimeOnly.MinValue).Date)
-                .ToListAsync();
+                    f.AirportTo.Name == request.airportNameTo);
+
+            if (request.flightDate != default)
+            {
+                var date = request.flightDate.ToDateTime(TimeOnly.MinValue).Date;
+                query = query.Where(f => f.Departure.Date == date);
+            }
+
+            var flights = await query.ToListAsync();
 
             return flights.Select(f => new FlightDTO
             {
