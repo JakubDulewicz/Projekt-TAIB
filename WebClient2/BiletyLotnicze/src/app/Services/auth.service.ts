@@ -1,38 +1,30 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
-import { catchError } from 'rxjs/operators';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-  private baseUrl = 'http://localhost:7009/api/auth'; // Upewnij się, że URL jest poprawny
+  private baseUrl = 'http://localhost:7009/api/Auth'; // Upewnij się, że URL jest poprawny
 
   constructor(private http: HttpClient) { }
 
   register(user: any): Observable<any> {
-    return this.http.post(`${this.baseUrl}/register`, user).pipe(
-      catchError(this.handleError)
-    );
+    return this.http.post(`http://localhost:7009/api/Auth/register`, user);
   }
 
   login(credentials: any): Observable<any> {
-    console.log('Sending login request:', credentials); // Logowanie dla debugowania
-    return this.http.post(`${this.baseUrl}/login`, credentials).pipe(
-      catchError(this.handleError)
-    );
-  }
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json'
+    });
 
-  private handleError(error: HttpErrorResponse) {
-    console.error('An error occurred:', error.message); // Logowanie błędów
-    if (error.error instanceof ErrorEvent) {
-      // Błąd po stronie klienta
-      console.error('Client-side error:', error.error.message);
-    } else {
-      // Błąd po stronie serwera
-      console.error(`Server-side error: ${error.status} ${error.message}`);
-    }
-    return throwError('Something went wrong; please try again later.');
+    return this.http.post(`http://localhost:7009/api/Auth/login`, credentials, { headers, observe: "response" }).pipe(
+      map((response: HttpResponse<any>) => {
+        const token = response.headers.get('Authorization');
+        return { token };
+      })
+    );
   }
 }

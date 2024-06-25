@@ -1,41 +1,37 @@
+<router-outlet></router-outlet>
 <div class="bg">
-<div class="header">
-  <div class="logo"></div><p class="mainTitle">Ticket Service</p>
-  <div class="menu">
-    <a routerLink="/">Home</a>
-    <a routerLink="/about">About</a>
-    <a routerLink="/contact">Contact</a>
-    <a routerLink="/login">Sign In</a>
-    <a routerLink="/signup">Sign Up</a>
-  </div>
-</div>
-<div class="content">
-  <div class="sidebar">TU NA PEWNO COŚ BĘDZIE</div>
-  <div class="main">
-    
-    <div class="search-bar">
-      <label>
-        From
-        <select [(ngModel)]="from" (change)="filterFlights()">
-          <option value="" disabled selected>Select Airport</option>
-          <option *ngFor="let airport of airports" [value]="airport.name">{{ airport.name }}</option>
-        </select>
-      </label>
-      <label>
-        To
-        <select [(ngModel)]="to" (change)="filterFlights()">
-          <option value="" disabled selected>Select Airport</option>
-          <option *ngFor="let airport of airports" [value]="airport.name">{{ airport.name }}</option>
-        </select>
-      </label>
-      <label>
-        Date
-        <input type="date" [(ngModel)]="date" (change)="filterFlights()">
-      </label>
-      <button (click)="filterFlights()">Search</button>
+  <div class="header">
+    <div class="logo"></div><p class="mainTitle">Ticket Service</p>
+    <div class="menu">
+      <a routerLink="/">Home</a>
+      <a routerLink="/about">About</a>
+      <a routerLink="/contact">Contact</a>
+      <a routerLink="/login">Sign In</a>
+      <a routerLink="/signup">Sign Up</a>
     </div>
-    <div *ngIf="flights.length === 0">Loading flights...</div> <!-- Dodano informację o ładowaniu -->
-    <div class="flights">
+  </div>
+  <div class="content">
+    <div class="sidebar">TU NA PEWNO COŚ BĘDZIE</div>
+    <div class="main">
+      <div class="search-bar">
+        <label>
+          From
+          <select [(ngModel)]="from">
+            <option value="" disabled selected>Select Airport</option>
+            <option *ngFor="let airport of airports" [value]="airport.name">{{ airport.name }}</option>
+          </select>
+        </label>
+        <label>
+          To
+          <select [(ngModel)]="to">
+            <option value="" disabled selected>Select Airport</option>
+            <option *ngFor="let airport of airports" [value]="airport.name">{{ airport.name }}</option>
+          </select>
+        </label>
+        <button (click)="filterFlights()">Search</button>
+      </div>
+      <div *ngIf="flights.length === 0">Loading flights...</div> <!-- Dodano informację o ładowaniu -->
+      <div class="flights">
         <div *ngFor="let flight of flights" class="flight">
           <div class="flight-details">
             <div class="departure">
@@ -50,10 +46,10 @@
             </div>
           </div>
           <div class="airline">
-            <button>Buy Ticket</button>
+            <button (click)="buyTicket(flight)">Buy Ticket</button>
           </div>
         </div>
       </div>
     </div>
-    </div>
   </div>
+</div>

@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { FlightComponent } from './flight/flight.component';
+import { SeatSelectionComponent } from './seat-selection/seat-selection.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   {path: 'flights', component: FlightComponent},
+  {path: 'seat-selection', component: SeatSelectionComponent},
   { path: '**', redirectTo: '' }
 ];
 

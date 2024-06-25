@@ -10,6 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { FlightService } from './Services/flight.service';
 import { FlightComponent } from './flight/flight.component';
+import { SeatSelectionComponent } from './seat-selection/seat-selection.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { FlightComponent } from './flight/flight.component';
     HomeComponent,
     LoginComponent,
     RegisterComponent,
-    FlightComponent
+    FlightComponent,
+    SeatSelectionComponent
   ],
   imports: [
     BrowserModule,

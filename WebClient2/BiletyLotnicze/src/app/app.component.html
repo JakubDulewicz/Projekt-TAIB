@@ -1,2 +1,10 @@
-<router-outlet />
-
+<nav>
+    <a routerLink="/">Home</a>
+    <a routerLink="/about">About</a>
+    <a routerLink="/contact">Contact</a>
+    <a *ngIf="!isLoggedIn" routerLink="/login">Login</a>
+    <a *ngIf="!isLoggedIn" routerLink="/signup">Sign Up</a>
+    <a *ngIf="isLoggedIn" routerLink="/account">My Account</a>
+    <a *ngIf="isLoggedIn" (click)="logout()">Logout</a>
+  </nav>
+  <router-outlet></router-outlet>

@@ -1,0 +1,20 @@
+<div class="seat-selection">
+    <div class="passenger-info">
+      <h2>Passenger</h2>
+      <p>{{ passengerName }}</p>
+    </div>
+    <div class="seat-map">
+      <div class="seat-row" *ngFor="let row of seats">
+        <div class="seat" *ngFor="let seat of row"
+             [ngClass]="{'occupied': seat.status === 'occupied', 'selected': seat === selectedSeat}"
+             (click)="selectSeat(seat)">
+          {{ seat.id }}
+        </div>
+      </div>
+    </div>
+    <div class="seat-info">
+      <div>To: <span class="to-seat" [ngClass]="{'selected': selectedSeat !== null}"></span></div>
+      <div>From: <span class="from-seat"></span></div>
+      <button [disabled]="!selectedSeat">Next Flight</button>
+    </div>
+  </div>

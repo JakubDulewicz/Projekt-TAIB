@@ -1,0 +1,52 @@
+.seat-selection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .passenger-info {
+    margin-bottom: 20px;
+  }
+  
+  .seat-map {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .seat-row {
+    display: flex;
+  }
+  
+  .seat {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+    margin: 5px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+  }
+  
+  .seat.occupied {
+    background-color: red;
+    cursor: not-allowed;
+  }
+  
+  .seat.available {
+    background-color: blue;
+  }
+  
+  .seat.selected {
+    background-color: yellow;
+  }
+  
+  .seat-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .seat-info div {
+    margin-bottom: 10px;
+  }

@@ -1,35 +1,31 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../Services/auth.service';
 import { Router } from '@angular/router';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { NgForm } from '@angular/forms';
+import { createWatch } from '@angular/core/primitives/signals';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
-  credentials = {
-    email: '',
-    password: ''
-  };
-  errorMessage: string = ''; // Pole do przechowywania wiadomości o błędzie
+export class LoginComponent {
+  credentials = { email: '', password: '' };
 
   constructor(private authService: AuthService, private router: Router) { }
-
-  ngOnInit(): void {}
 
   login(): void {
     console.log('Logging in with credentials:', this.credentials); // Debugging log
     this.authService.login(this.credentials).subscribe(
-      (data: any) => {
+      (data) => {
         console.log('Login successful:', data); // Debugging log
         localStorage.setItem('token', data.token);
         this.router.navigate(['/']);
       },
-      (error: any) => {
+      (error) => {
         console.error('Login failed:', error); // Debugging log
-        this.errorMessage = 'Login failed. Please check your credentials and try again.';
-        alert(this.errorMessage);
+        alert('Login failed');
       }
     );
   }
