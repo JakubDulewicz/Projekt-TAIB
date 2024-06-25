@@ -1,0 +1,60 @@
+    :host {
+        width:100%;
+        margin: 0px 30px 0px 0px;
+    }
+
+   .main {
+      flex: 1;
+      padding: 20px;
+      width:100%;
+    }
+    
+    .search-bar {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    
+    .flights {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .flight {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid #afafaf;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius:10px;
+    }
+    
+    .flight-details {
+      display: flex;
+      justify-content: space-between;
+      width: 60%;
+    }
+    
+    .departure, .arrival {
+      text-align: center;
+    }
+    
+    .airline img {
+      width: 50px;
+    }
+    
+    .airline button {
+      background-color: yellow;
+      border: 1px solid black;
+      border-radius:6px;
+      padding: 10px;
+      cursor: pointer;
+    }
+  
+    .airline button:hover {
+      background-color: gold;
+    }
+    .airline button:active{
+      background-color: goldenrod;
+    }

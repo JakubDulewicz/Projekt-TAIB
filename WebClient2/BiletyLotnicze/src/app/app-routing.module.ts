@@ -9,13 +9,13 @@ import { SeatSelectionComponent } from './seat-selection/seat-selection.componen
 
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   {path: 'airports', component:AirportComponent},
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   {path: 'flights', component: FlightComponent},
   {path: 'seat-selection', component: SeatSelectionComponent},
-  { path: '**', redirectTo: '' }
+  { path: '**', redirectTo: 'flights' }
 ];
 
 @NgModule({
