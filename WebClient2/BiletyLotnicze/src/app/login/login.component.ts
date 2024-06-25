@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../Services/auth.service';
 import { Router } from '@angular/router';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { NgForm } from '@angular/forms';
-import { createWatch } from '@angular/core/primitives/signals';
+import { NgForm, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup,  } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -11,16 +11,19 @@ import { createWatch } from '@angular/core/primitives/signals';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  credentials = { email: '', password: '' };
+  form: FormGroup;
 
-  constructor(private authService: AuthService, private router: Router) { }
+  constructor(formBuilder: FormBuilder, private authService: AuthService, private router: Router) {this.form = formBuilder.group({
+    email: formBuilder.control(null,[Validators.required]),
+    password: formBuilder.control(null, [Validators.required])
+  }); }
 
   login(): void {
-    console.log('Logging in with credentials:', this.credentials); // Debugging log
-    this.authService.login(this.credentials).subscribe(
-      (data) => {
-        console.log('Login successful:', data); // Debugging log
-        localStorage.setItem('token', data.token);
+    const credentials = this.form.value;
+    console.log(this.form.value);
+    this.authService.login(credentials).subscribe(
+      response => {
+        localStorage.setItem('token', response.token);
         this.router.navigate(['/']);
       },
       (error) => {
