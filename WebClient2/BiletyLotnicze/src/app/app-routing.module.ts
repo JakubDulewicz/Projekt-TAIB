@@ -1,15 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AirportComponent } from './airport/airport.component';
-import { HomeComponent } from './home/home.component';
+//import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { FlightComponent } from './flight/flight.component';
 import { SeatSelectionComponent } from './seat-selection/seat-selection.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+ // { path: 'home', component: HomeComponent },
+  {path: 'about', component: AboutComponent},
+  {path: 'contact', component: ContactComponent},
   {path: 'airports', component:AirportComponent},
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },

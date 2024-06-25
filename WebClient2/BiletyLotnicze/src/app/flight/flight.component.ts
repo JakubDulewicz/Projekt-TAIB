@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FlightService } from '../Services/flight.service'; // Spójny import
 import { AirportService } from '../Services/airport.service';
 import { FlightDTO } from '../Models/flight.model';
@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   templateUrl: './flight.component.html',
   styleUrl: './flight.component.css'
 })
-export class FlightComponent {
+export class FlightComponent implements OnInit {
   flights: any[] = [];
   from: string = '';
   to: string = '';

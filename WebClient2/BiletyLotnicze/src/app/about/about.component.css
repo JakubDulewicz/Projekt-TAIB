@@ -1,0 +1,48 @@
+:host {
+    margin:0px 20px 0px 20px;
+}
+
+.section {
+    padding:30px;
+}
+
+h3 {
+    text-align: center;
+}
+
+.authors {
+    display:flex;
+    flex-direction: row;
+    padding: 30px;
+    
+}
+
+.faces {
+    width:200px;
+    height:200px;
+    /* border: 1px solid black; */
+    background-size: 100% 100%;
+    padding:50px;
+    border-radius:200px;
+}
+.jd {
+    width: inherit;
+    height: inherit;
+    background-image: url(dulu.jpg);
+    background-size: inherit;
+    border-radius:inherit;
+}
+.lp {
+    width: inherit;
+    height: inherit;
+    background-image: url(lp.jpg);
+    background-size: inherit;
+    border-radius:inherit;
+}
+.wt {
+    width: inherit;
+    height: inherit;
+    background-image: url(wt.jpg);
+    background-size: inherit;
+    border-radius:inherit;
+}
