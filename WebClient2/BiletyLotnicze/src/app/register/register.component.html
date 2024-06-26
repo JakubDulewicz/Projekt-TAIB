@@ -1,13 +1,24 @@
+<div class="main">
 <div class="register-form">
-    <h2>Signup</h2>
+    <h2>Signup</h2><br><br>
     <form (ngSubmit)="register()">
-      <label>Email</label>
-      <input type="email" [(ngModel)]="user.email" name="email" required />
-      <label>Create password</label>
-      <input type="password" [(ngModel)]="user.password" name="password" required />
-      <label>Confirm password</label>
-      <input type="password" [(ngModel)]="user.confirmPassword" name="confirmPassword" required />
+      <label>Name &Tab;</label>
+      <input type="name" [(ngModel)]="user.name" name="name" required /><br><br>
+      <label>PESEL &Tab;</label>
+      <input type="pesel" [(ngModel)]="user.pesel" name="pesel" required /><br><br>
+      <label>Email &Tab;</label>
+      <input type="email" [(ngModel)]="user.email" name="email" required /><br><br>
+      <label>Create password &Tab;</label>
+      <input type="password" [(ngModel)]="user.password" name="password" required /><br><br>
+      <label>Confirm password &Tab;</label>
+      <input type="password" [(ngModel)]="user.confirmPassword" name="confirmPassword" required /><br><br>
+      <label>Date &Tab;</label>
+      <input type="date" [(ngModel)]="user.date" name="date" required /><br><br>
+      <label>Phone number &Tab;</label>
+      <input type="phone" [(ngModel)]="user.phone" name="phone" required /><br><br>
+      <br><br>
       <button type="submit">Signup</button>
     </form>
     <p>Already have an account? <a routerLink="/login">Login</a></p>
   </div>
+</div>

@@ -16,7 +16,8 @@ export class RegisterComponent {
     confirmPassword: '',
     date: '',
     phone: '',
-    roles: 1 // Domyślna rola
+    roles: 1, // Domyślna rola
+    tickets:[]
   };
 
   constructor(private authService: AuthService, private router: Router) { }
@@ -26,6 +27,8 @@ export class RegisterComponent {
       alert('Passwords do not match');
       return;
     }
+
+    console.log(this.user);
 
     this.authService.register(this.user).subscribe(
       response => {

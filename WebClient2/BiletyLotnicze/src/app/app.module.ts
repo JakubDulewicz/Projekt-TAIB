@@ -13,6 +13,7 @@ import { FlightComponent } from './flight/flight.component';
 import { SeatSelectionComponent } from './seat-selection/seat-selection.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { MyaccountComponent } from './myaccount/myaccount.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ContactComponent } from './contact/contact.component';
     FlightComponent,
     SeatSelectionComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    MyaccountComponent
   ],
   imports: [
     BrowserModule,
