@@ -79,66 +79,35 @@ namespace BLL_EF
             });
         }
 
-        //Task ITicketService.CreateTicket(string seat, Class flightClass, double price, int flightId, int airlineId)
-        //{
-        //    var ticket = new TicketDTO()
-        //    {
-        //        Id = GenerateUniqueId(),
-        //        Seat = seat,
-        //        Class = flightClass,
-        //        Price = price,
-        //        FlightId = flightId,
-        //        AirlineId = airlineId
-        //    };
-        //    if(price <= 0)
-        //    {
-        //        throw new ArgumentException("Price must be greater than 0");
-        //    }
-        //    else
-        //    {
-        //        _tickets.Add(ticket);
-        //        return Task.CompletedTask;
-        //    }
+        public async Task BuyTicket(TicketRequest ticketRequest, int userId)
+        {
+            var user = await _flightsContext.User.FindAsync(userId);
+            if (user == null)
+                throw new Exception("Invalid user");
 
-        //}
-        //private int GenerateUniqueId()
-        //{
-        //    return new Random().Next(1, 100000);
-        //}
+            var flight = await _flightsContext.Flight.FindAsync(ticketRequest.FlightId);
+            if (flight == null)
+                throw new Exception("Invalid flight");
 
-        //public Task DeleteTicket(TicketDTO ticketId)
-        //{
-        //    var deletedTicket = _tickets.FirstOrDefault(ticketId);
-        //    if(deletedTicket != null)
-        //    {
-        //        _tickets.Remove(deletedTicket);
-        //    }
-        //    else
-        //    {
-        //        throw new ArgumentException($"Unable to delete ticket {ticketId}");
-        //    }
-        //    return Task.CompletedTask;
-        //}
+            var airline = await _flightsContext.Airline.FindAsync(ticketRequest.AirlineId);
+            if (airline == null)
+                throw new Exception("Invalid airline");
 
-        //public Task<IEnumerable<TicketDTO>> GetTickets()
-        //{
-        //    IEnumerable<TicketDTO> tickets = _tickets;
 
-        //    return Task.FromResult(tickets);
-        //}
+            var ticket = new Ticket
+            {
+                Seat = ticketRequest.Seat,
+                Class = ticketRequest.Class,
+                Price = ticketRequest.Price,
+                User = user,
+                Flight = flight,
+                Airlines = airline
 
-        //public Task AsignTicketToUser(int ticketId, int userId)
-        //{
-        //    var ticket = _tickets.FirstOrDefault(t => t.UserId == userId && t.Id == ticketId);
-        //    if (ticket != null)
-        //    {
-        //        ticket.UserId = userId;
-        //    }
-        //    else
-        //    {
-        //        throw new InvalidOperationException("Ticket not found");
-        //    }
-        //    return Task.CompletedTask;
-        //}
+            };
+           
+            _flightsContext.Ticket.Add(ticket);
+            await _flightsContext.SaveChangesAsync();
+
+        }
     }
 }

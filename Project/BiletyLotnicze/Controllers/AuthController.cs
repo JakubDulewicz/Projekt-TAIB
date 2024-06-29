@@ -57,4 +57,22 @@ public class AuthController : Controller
             throw;
         }
     }
+    [HttpGet("GetAllUsers")]
+    public async Task<IActionResult> GetAllUsers()
+    {
+        try
+        {
+            var flights = await _authService.GetAllUsers();
+            if (flights == null)
+            {
+                return NotFound("Flights not found");
+            }
+            return Ok(flights);
+        }
+        catch (Exception ex)
+        {
+            return BadRequest($"Bad Request {ex.Message} ");
+        }
+
+    }
 }

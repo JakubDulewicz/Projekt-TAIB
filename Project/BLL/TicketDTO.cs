@@ -21,4 +21,15 @@ namespace BLL
         public int AirlineId { get; init; }
         public UserDTO? User { get; init; }
     }
+
+    public class TicketRequest
+    {
+        public int Id { get; init; }
+        public string Seat { get; init; }
+        public Class Class { get; init; }
+        public double Price { get; init; }
+        public int UserId { get; set; }
+        public int FlightId { get; init; }
+        public int AirlineId { get; init; }
+    }
 }

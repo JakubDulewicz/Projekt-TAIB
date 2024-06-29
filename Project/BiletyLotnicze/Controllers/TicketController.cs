@@ -1,7 +1,9 @@
 ﻿using BLL;
 using BLL_EF;
 using DAL;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace BiletyLotnicze.Controllers
 {
@@ -21,17 +23,17 @@ namespace BiletyLotnicze.Controllers
         public async Task<IActionResult> Get()
         {
             //throw new Exception("HDR");
-            var airports = await _ticketService.GetTickets();
-            if (airports == null)
+            var tickets = await _ticketService.GetTickets();
+            if (tickets == null)
             {
-                return NotFound("Airports not found");
+                return NotFound("Ticket not found");
             }
-            return Ok(airports);
+            return Ok(tickets);
 
         }
 
         [HttpPost("CreateTicket")]
-        public async Task<IActionResult> AddAirport(TicketDTO ticketDTO)
+        public async Task<IActionResult> AddTicket(TicketDTO ticketDTO)
         {
             try
             {
@@ -41,6 +43,22 @@ namespace BiletyLotnicze.Controllers
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
+            }
+        }
+
+        //[Authorize]
+        [HttpPost("BuyTicket")]
+        public async Task<IActionResult> BuyTicket(TicketRequest ticketRequest)
+        {
+            try
+            {
+               // var userId = int.Parse(User.FindFirst(ClaimTypes.Name)?.Value);
+                await _ticketService.BuyTicket(ticketRequest, ticketRequest.UserId);
+                return Ok("Ticket purchased successfully");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"An error occurred: {ex.Message}");
             }
         }
 

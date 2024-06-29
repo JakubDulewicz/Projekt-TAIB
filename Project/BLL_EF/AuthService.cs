@@ -66,5 +66,39 @@ namespace BLL_EF
 
             return tokenString;
         }
+
+        public async Task<IEnumerable<UserDTO>> GetAllUsers()
+        {
+            var users = await _context.User
+        .Include(u => u.Tickets)
+            .ThenInclude(t => t.Flight)
+        .Include(u => u.Tickets)
+            .ThenInclude(t => t.Airlines)
+        .ToListAsync();
+
+            var userDTOs = users.Select(u => new UserDTO
+            {
+                Id = u.UserId,
+                Name = u.Name,
+                Pesel = u.Pesel,
+                Email = u.Email,
+                Password = u.Password,
+                Date = u.Date,
+                Phone = u.Phone,
+                Roles = u.Roles,
+                Tickets = u.Tickets.Select(t => new TicketDTO
+                {
+                    Id = t.TicketId,
+                    Seat = t.Seat,
+                    Class = t.Class,
+                    Price = t.Price,
+                    UserId = t.User.UserId,
+                    FlightId = t.Flight.FlightId,
+                    AirlineId = t.Airlines.AirlineId,
+                })
+            }).ToList();
+
+            return userDTOs;
+        }
     }
 }
