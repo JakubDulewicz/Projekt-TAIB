@@ -8,6 +8,7 @@ import { FlightComponent } from './flight/flight.component';
 import { SeatSelectionComponent } from './seat-selection/seat-selection.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { AuthGuard } from './auth.guard';
 
 
 const routes: Routes = [

@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { jwtDecode } from 'jwt-decode';
 
 @Injectable({
   providedIn: 'root'
@@ -20,11 +21,18 @@ export class AuthService {
       'Content-Type': 'application/json'
     });
 
-    return this.http.post(`https://localhost:7009/api/Auth/login`, credentials, { headers, observe: "response" }).pipe(
+    return this.http.post(`${this.baseUrl}/login`, credentials, { headers, observe: "response" }).pipe(
       map((response: HttpResponse<any>) => {
         const token = response.headers.get('Authorization');
+        if (token) {
+          localStorage.setItem('token', token);
+        }
         return { token };
       })
     );
+  }
+  getUserId(): number {
+    // Return a hardcoded user ID
+    return 3; // Replace with a valid user ID
   }
 }

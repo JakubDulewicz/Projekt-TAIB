@@ -26,7 +26,7 @@ import { MyaccountComponent } from './myaccount/myaccount.component';
     SeatSelectionComponent,
     AboutComponent,
     ContactComponent,
-    MyaccountComponent
+    MyaccountComponent,
   ],
   imports: [
     BrowserModule,
