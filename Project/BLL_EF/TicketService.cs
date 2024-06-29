@@ -17,7 +17,7 @@ namespace BLL_EF
 
         public TicketService(FlightsContext flightsContext)
         {
-           _flightsContext = flightsContext;
+            _flightsContext = flightsContext;
         }
         public async Task CreateTicket(TicketDTO ticketDTO)
         {
@@ -53,7 +53,7 @@ namespace BLL_EF
         public async Task DeleteTicket(int ticketId)
         {
             var deletedTicket = await _flightsContext.Ticket.FindAsync(ticketId);
-            if(deletedTicket != null)
+            if (deletedTicket != null)
             {
                 _flightsContext.Ticket.Remove(deletedTicket);
                 await _flightsContext.SaveChangesAsync();
@@ -66,7 +66,11 @@ namespace BLL_EF
 
         public async Task<IEnumerable<TicketDTO>> GetTickets()
         {
-            var tickets = await _flightsContext.Ticket.ToListAsync();
+            var tickets = await _flightsContext.Ticket
+            .Include(t => t.User)
+            .Include(t => t.Flight)
+            .Include(t => t.Airlines)
+            .ToListAsync();
             return tickets.Select(t => new TicketDTO
             {
                 Id = t.TicketId,
@@ -104,7 +108,7 @@ namespace BLL_EF
                 Airlines = airline
 
             };
-           
+
             _flightsContext.Ticket.Add(ticket);
             await _flightsContext.SaveChangesAsync();
 
