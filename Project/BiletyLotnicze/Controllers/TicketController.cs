@@ -46,14 +46,14 @@ namespace BiletyLotnicze.Controllers
             }
         }
 
-        //[Authorize]
+        [Authorize]
         [HttpPost("BuyTicket")]
         public async Task<IActionResult> BuyTicket(TicketRequest ticketRequest)
         {
             try
             {
-               // var userId = int.Parse(User.FindFirst(ClaimTypes.Name)?.Value);
-                await _ticketService.BuyTicket(ticketRequest, ticketRequest.UserId);
+                var userId = int.Parse(User.FindFirst(ClaimTypes.Name)?.Value);
+                await _ticketService.BuyTicket(ticketRequest, userId);
                 return Ok("Ticket purchased successfully");
             }
             catch (Exception ex)
