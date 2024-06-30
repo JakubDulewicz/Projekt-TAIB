@@ -21,18 +21,46 @@ export class AuthService {
       'Content-Type': 'application/json'
     });
 
-    return this.http.post(`${this.baseUrl}/login`, credentials, { headers, observe: "response" }).pipe(
+    return this.http.post(`${this.baseUrl}/login`, credentials, { headers, observe: 'response' }).pipe(
       map((response: HttpResponse<any>) => {
-        const token = response.headers.get('Authorization');
+        console.log('Response:', response); // Loguj całą odpowiedź
+        const token = response.body?.token; // Zakładając, że token jest w ciele odpowiedzi
         if (token) {
-          localStorage.setItem('token', token);
+          console.log('Token received:', token); // Loguj otrzymany token
+          localStorage.setItem('token', token); // Zapisz token w localStorage
+        } else {
+          console.warn('Token is missing in the response body'); // Ostrzeżenie, jeśli brak tokena w ciele odpowiedzi
         }
         return { token };
       })
     );
   }
-  getUserId(): number {
-    // Return a hardcoded user ID
-    return 3; // Replace with a valid user ID
+
+  getToken(): string | null {
+    return localStorage.getItem('token');
+  }
+  getUserId(): number | null {
+    const token = this.getToken();
+    if (token) {
+      try {
+        const decodedToken: any = jwtDecode(token);
+        return decodedToken?.userId ?? null; // Assuming the token has a userId field
+      } catch (error) {
+        console.error('Error decoding token:', error);
+        return null;
+      }
+    }
+    return null;
+  }
+
+  logout(): void {
+    localStorage.removeItem('token');
+  }
+  getAuthHeaders(): HttpHeaders {
+    const token = localStorage.getItem('token');
+    return new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${token}`
+    });
   }
 }

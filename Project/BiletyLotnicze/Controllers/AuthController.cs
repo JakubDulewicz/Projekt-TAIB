@@ -46,8 +46,12 @@ public class AuthController : Controller
     {
         try
         {
-            await _authService.Login(request);
-            return Ok();
+            var token = await _authService.Login(request);
+            if (token == null)
+            {
+                return Unauthorized();
+            }
+            return Ok(new { token });
         }
         catch (DbUpdateException ex)
         {

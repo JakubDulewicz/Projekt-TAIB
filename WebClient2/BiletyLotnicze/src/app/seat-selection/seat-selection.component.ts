@@ -19,7 +19,8 @@ export class SeatSelectionComponent implements OnInit {
 
   constructor(
     private fb: FormBuilder,
-    private ticketService: TicketService
+    private ticketService: TicketService,
+    private authService: AuthService
   ) {
     this.ticketForm = this.fb.group({
       seat: ['', Validators.required],
@@ -58,7 +59,7 @@ export class SeatSelectionComponent implements OnInit {
     if (this.ticketForm.valid) {
       const ticketRequest: TicketDTO = {
         ...this.ticketForm.value,
-        userId: 2 // Assuming a static userId or remove if not needed
+        userId: this.authService.getUserId() // Assuming a static userId or remove if not needed
       };
       this.ticketService.buyTicket(ticketRequest).subscribe(response => {
         console.log('Ticket purchase response:', response); // Log the response
