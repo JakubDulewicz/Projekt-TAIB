@@ -75,7 +75,7 @@ namespace BLL_EF
                 Status = f.Status,
                 AirportToAirportId = f.AirportToAirportId,
                 AirportFromAirportId = f.AirportFromAirportId,
-                PlaneId = f.PlaneId
+                PlaneId = f.PlaneId,
             });
         }
 

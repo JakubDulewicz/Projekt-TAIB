@@ -52,9 +52,16 @@ namespace BiletyLotnicze.Controllers
         {
             try
             {
-                //var userId = int.Parse(User.FindFirst(ClaimTypes.Name)?.Value);
-                await _ticketService.BuyTicket(ticketRequest, ticketRequest.UserId);
-                return Ok(new { message = "Ticket purchased successfully" });
+                var userIdClaim = User.FindFirst(ClaimTypes.Name)?.Value;
+                if (userIdClaim == null)
+                    return BadRequest("User ID claim not found.");
+
+                if (!int.TryParse(userIdClaim, out var userId))
+                    return BadRequest("Invalid user ID.");
+
+                await _ticketService.BuyTicket(ticketRequest, userId);
+                return Ok("Ticket purchased successfully");
+
             }
             catch (Exception ex)
             {
