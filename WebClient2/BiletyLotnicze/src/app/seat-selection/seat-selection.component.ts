@@ -4,6 +4,7 @@ import { TicketService } from '../Services/ticket.service';
 import { AuthService } from '../Services/auth.service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Class, TicketDTO } from '../Models/ticket.model';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-seat-selection',
@@ -14,8 +15,20 @@ export class SeatSelectionComponent implements OnInit {
   @Input() passengerName!: string;
   seats: any[] = [];
   selectedSeat: any = null;
+  ticketForm: FormGroup;
 
-  constructor(private ticketService: TicketService, private authService: AuthService) { }
+  constructor(
+    private fb: FormBuilder,
+    private ticketService: TicketService
+  ) {
+    this.ticketForm = this.fb.group({
+      seat: ['', Validators.required],
+      class: [1, Validators.required], // Example class default value
+      price: [100, Validators.required], // Example price default value
+      flightId: [5, Validators.required], // Example flight ID default value
+      airlineId: [2, Validators.required], // Example airline ID default value
+    });
+  }
 
   ngOnInit(): void {
     this.initializeSeats();
@@ -34,25 +47,22 @@ export class SeatSelectionComponent implements OnInit {
     }
   }
 
-  selectSeat(seat: Seat): void {
+  selectSeat(seat: any): void {
     if (seat.status === 'available') {
       this.selectedSeat = seat;
+      this.ticketForm.patchValue({ seat: seat.id });
     }
   }
 
   buyTicket(): void {
-    if (this.selectedSeat) {
-      const userId = this.authService.getUserId();
-      const ticketRequest = {
-        seat: this.selectedSeat.id,
-        class: 1, // Example class
-        price: 100, // Example price
-        userId: userId,
-        flightId: 5, // Example flight ID
-        airlineId: 2 // Example airline ID
+    if (this.ticketForm.valid) {
+      const ticketRequest: TicketDTO = {
+        ...this.ticketForm.value,
+        userId: 2 // Assuming a static userId or remove if not needed
       };
       this.ticketService.buyTicket(ticketRequest).subscribe(response => {
-        alert('Ticket purchased successfully');
+        console.log('Ticket purchase response:', response); // Log the response
+          alert(response.message || 'Ticket purchased successfully');
       }, error => {
         alert('Error purchasing ticket: ' + error.message);
       });

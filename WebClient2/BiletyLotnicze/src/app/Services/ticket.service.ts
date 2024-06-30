@@ -12,6 +12,18 @@ export class TicketService {
   constructor(private http: HttpClient) { }
 
   buyTicket(ticketRequest: any): Observable<any> {
-    return this.http.post(`https://localhost:7009/Ticket/BuyTicket`, ticketRequest);
+
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json'
+      })
+    };
+    return this.http.post(`https://localhost:7009/Ticket/BuyTicket`, ticketRequest, httpOptions).pipe(
+      catchError(this.handleError));
+  }
+
+  private handleError(error: any): Observable<never> {
+    console.error('An error occurred', error);
+    return throwError('Something bad happened; please try again later.');
   }
 }

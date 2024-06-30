@@ -1,20 +1,34 @@
-<div class="seat-selection">
-  <div class="passenger-info">
-    <h2>Passenger</h2>
-    <p>{{ passengerName }}</p>
-  </div>
-  <div class="seat-map">
-    <div class="seat-row" *ngFor="let row of seats">
-      <div class="seat" *ngFor="let seat of row"
-           [ngClass]="{'occupied': seat.status === 'occupied', 'selected': seat === selectedSeat}"
-           (click)="selectSeat(seat)">
-        {{ seat.id }}
-      </div>
-    </div>
-  </div>
-  <div class="seat-info">
-    <div>To: <span class="to-seat" [ngClass]="{'selected': selectedSeat !== null}"></span></div>
-    <div>From: <span class="from-seat"></span></div>
-    <button [disabled]="!selectedSeat" (click)="buyTicket()">Next Flight</button>
+<div>
+  <h2>Select a seat for {{ passengerName }}</h2>
+  <div *ngFor="let row of seats">
+    <button *ngFor="let seat of row"
+            [ngClass]="{ 'available': seat.status === 'available', 'occupied': seat.status === 'occupied' }"
+            (click)="selectSeat(seat)">
+      {{ seat.id }}
+    </button>
   </div>
 </div>
+
+<form [formGroup]="ticketForm" (ngSubmit)="buyTicket()">
+  <div>
+    <label for="seat">Selected Seat:</label>
+    <input id="seat" formControlName="seat" readonly>
+  </div>
+  <div>
+    <label for="class">Class:</label>
+    <input id="class" formControlName="class" type="number">
+  </div>
+  <div>
+    <label for="price">Price:</label>
+    <input id="price" formControlName="price" type="number">
+  </div>
+  <div>
+    <label for="flightId">Flight ID:</label>
+    <input id="flightId" formControlName="flightId" type="number">
+  </div>
+  <div>
+    <label for="airlineId">Airline ID:</label>
+    <input id="airlineId" formControlName="airlineId" type="number">
+  </div>
+  <button type="submit" [disabled]="!ticketForm.valid">Buy Ticket</button>
+</form>
